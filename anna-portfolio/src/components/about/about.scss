@@ -1,0 +1,78 @@
+@import "../../styles/vars.scss";
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  &-title {
+    flex-basis: 40%;
+  }
+}
+
+.double-line-separator {
+  position: relative;
+  height: 17px;
+  margin: 75px 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+  }
+
+  &::before {
+    top: 0.5px;
+    left: 0;
+    width: 90%;
+    background: rgb(163, 177, 138);
+    background: linear-gradient(
+      90deg,
+      rgba(163, 177, 138, 1) 19%,
+      rgba(59, 125, 42, 1) 75%
+    );
+  }
+
+  &::after {
+    bottom: 0.5px;
+    right: 0;
+    width: 90%;
+
+    background: rgb(59, 125, 42);
+    background: linear-gradient(
+      90deg,
+      rgba(59, 125, 42, 1) 19%,
+      rgba(163, 177, 138, 1) 75%
+    );
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+    background: $color-text-contrast;
+  }
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-img {
+    flex-basis: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .technology-img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  &-text {
+    flex-basis: 40%;
+  }
+}

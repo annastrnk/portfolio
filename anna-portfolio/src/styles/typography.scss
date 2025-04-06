@@ -1,0 +1,63 @@
+@import "./vars.scss";
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.accent-text-title {
+  color: $color-text-contrast;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.accent-text-content {
+  color: $color-text-contrast;
+}
+
+.content-text {
+  color: $color-text;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.title {
+  color: $color-title;
+  font-weight: 400;
+  font-size: 42px;
+
+  &-item{
+    color: $color-text-contrast;
+    font-weight: 600;
+    font-size: 22px;
+  }
+}
+
+
+
+.dark-mode {
+  background-color: $color-dark-font-main;
+  color: $color-dark-text;
+
+  .title {
+    color: $color-dark-title;
+
+  &-item{
+    color: $color-dark-hover;
+  }
+  }
+  .content-text {
+    color: $color-dark-text;
+  }
+}
+
+// .flex-container {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin-top: 150px;
+// }

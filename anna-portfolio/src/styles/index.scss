@@ -1,0 +1,18 @@
+@import "./typography.scss";
+@import './vars.scss';
+
+body {
+  background-color:$color-font-main;
+  /* background-color: var(--color-black);
+  color: var(--color-white); */
+  /* font-family: "Montserrat", "Roboto", "Lato", sans-serif; */
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 16px 20px;
+  margin: 100px auto 0;
+  
+}
+

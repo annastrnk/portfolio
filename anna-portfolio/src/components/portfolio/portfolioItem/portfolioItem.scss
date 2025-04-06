@@ -1,0 +1,35 @@
+@import "../../../styles//vars.scss";
+
+.portfolio-item {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+
+  &-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  &-title {
+    color: $color-text-contrast;
+    font-weight: 600;
+    font-size: 22px;
+
+  }
+  &-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .link-project {
+
+   border: 1px solid rgb(182, 174, 174);
+   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 12px;
+   padding: 5px;
+
+    &:hover {
+      color: $color-hover;
+    }
+  }
+}

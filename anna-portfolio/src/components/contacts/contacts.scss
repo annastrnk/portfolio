@@ -1,0 +1,31 @@
+@import '../../styles/vars.scss';
+
+.contacts-title {
+  text-align: center;
+}
+
+.contacts-wrapper{
+
+    display: flex;
+    justify-content: space-around;
+
+.contacts-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-phone-black{
+    background-color:$color-text-contrast;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.contacts-phone-white{
+    background-color:$color-hover ;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+}

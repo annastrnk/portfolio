@@ -1,0 +1,28 @@
+// @import '../../styles/vars.scss';
+
+.main-section{
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.main-photo {
+  width: 300px;
+  border-radius: 50px;
+}
+
+.contacts-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .cv-block {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 0 8px;
+  }
+}

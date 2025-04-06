@@ -1,0 +1,41 @@
+@import '../../styles//vars.scss';
+
+.footer-section {
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(0 0 0 / 0.2);
+  color: $color-text-second;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+
+  .nav-link {
+    position: relative;
+    transition: color 0.3s;
+  
+    &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    font-weight:800;
+    background-color:$color-hover;
+    bottom: -5px; 
+    left: 0;
+    transition: width 0.3s;
+  }
+&:hover::after,
+  &.nav-link.active::after {
+    width: 100%;
+  }
+  &:hover{
+    color: $color-hover;
+  }
+ 
+}
+
+}
