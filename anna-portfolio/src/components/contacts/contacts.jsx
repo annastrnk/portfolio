@@ -9,7 +9,7 @@ export default function Contacts() {
   return (
     <div className="container">
       <h3 className="title contacts-title">
-        Contact <span className="accent-text-content">ME</span>
+        Contact <span className="content-text-accent">ME</span>
       </h3>
 
       <div className="contacts-wrapper">
