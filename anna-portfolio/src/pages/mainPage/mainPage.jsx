@@ -1,5 +1,7 @@
-import "./main-page.scss";
-import ContactNav from "../contactForm/contactNav/contactNav";
+import ContactNav from "../../components/contactNav/contactNav";
+import "./mainPage.scss"
+
+
 
 export default function MainPage() {
   return (

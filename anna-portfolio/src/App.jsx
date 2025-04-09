@@ -1,13 +1,15 @@
-
-import MainPage from "./components/main-page/main-page";
-import About from "./components/about/about";
+import './styles/index.scss';
 
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import { ThemeProvider } from "./context/ThemeContext";
-import Contacts from "./components/contacts/contacts";
-import Portfolio from "./components/portfolio/portfolio";
+
+
+import MainPage from "./pages/mainPage/mainPage";
+import AboutPage from "./pages/aboutPage/aboutPage";
+import PortfolioPage from "./pages/portfolioPage/portfolioPage";
+import ContactsPage from "./pages/contactsPage/contactsPage";
 
 
 function App() {
@@ -16,9 +18,9 @@ function App() {
     <Header/>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/contacts" element={<ContactsPage />} />
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes> 
        <Footer />

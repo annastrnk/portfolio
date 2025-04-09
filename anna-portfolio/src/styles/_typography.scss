@@ -1,4 +1,4 @@
-@import "./vars.scss";
+
 
 a {
   text-decoration: inherit;
@@ -10,54 +10,54 @@ ul {
 }
 
 .accent-text-title {
-  color: $color-text-contrast;
+  color: var(--color-text-contrast);
   font-size: 42px;
   font-weight: 500;
 }
 
 .content-text {
-  color: $color-text;
+  color: var(--color-text);
   font-size: 20px;
   font-weight: 400;
 
   &-accent {
-    color: $color-text-contrast;
+    color: var(--color-text-contrast);
     font-weight: 600;
   }
 }
 
 .title {
-  color: $color-title;
+  color:var(--color-title);
   font-weight: 400;
   font-size: 42px;
 
   &-item {
-    color: $color-text-contrast;
+    color: var(--color-text-contrast);
     font-weight: 600;
     font-size: 22px;
   }
 }
 
 .dark-mode {
-  background-color: $color-dark-font-main;
-  color: $color-dark-text;
+  background-color: var(--color-dark-font-main);
+  color: var(--color-dark-text);
 
 
   .accent-text-title{
-    color: $color-dark-text-accent;
+    color: var(--color-dark-text-accent);
   }
   .title {
-    color: $color-dark-title;
+    color: var(--color-dark-title);
 
     &-item {
-      color: $color-dark-text-accent;
+      color: var(--color-dark-text-accent);
     }
   }
   .content-text {
-    color: $color-dark-text;
+    color: var(--color-dark-text);
 
     &-accent{
-      color: $color-dark-text-accent;
+      color: var(--color-dark-text-accent);
     }
   }
 }

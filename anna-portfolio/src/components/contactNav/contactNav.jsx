@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../../context/ThemeContext";
 import './contactNax.scss'
+import { ThemeContext } from "../../context/ThemeContext";
 
 export default function ContactNav() {
   const { darkMode, toggleDarkMode } = useContext(ThemeContext);

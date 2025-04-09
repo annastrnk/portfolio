@@ -1,4 +1,4 @@
-@import "../../styles/vars.scss";
+
 
 header {
   max-width: 1400px;
@@ -8,6 +8,6 @@ header {
 
   .logo {
     font-size: 30px;
-    color: $color-hover;
+    color: var(--color-hover);
   }
 }
