@@ -1,0 +1,28 @@
+
+.hidden {
+  transform: translateY(-100%);
+}
+
+.visible {
+  transform: translateY(0);
+}
+
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  // background-color: $primary-color;
+  // color: $background-color;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+
+}

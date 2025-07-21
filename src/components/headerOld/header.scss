@@ -1,0 +1,13 @@
+
+
+header {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    font-size: 30px;
+    color: var(--color-hover);
+  }
+}

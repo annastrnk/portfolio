@@ -1,0 +1,36 @@
+// @import "../../../style//variables.module.scss";
+
+.header-main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  font-size: 36px;
+  // font-weight: 600;
+
+  .nav-link {
+    position: relative;
+    color: var(--color-text-contrast);
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-text-contrast);
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s;
+    }
+
+    &:hover::after,
+    &.active::after {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+}

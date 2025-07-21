@@ -1,0 +1,12 @@
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    @media screen and (min-width: 1024px) {
+      flex-direction: row; 
+      &-title {
+      flex-basis: 40%;
+    }
+    }
+  }

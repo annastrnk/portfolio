@@ -1,0 +1,19 @@
+.desktopNavigation {
+  display: none;
+
+
+}
+
+@media screen and (min-width: 1024px) {
+  .desktopNavigation {
+    display: flex;
+    gap: 30px;
+    position: static;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    height: auto; 
+    transition: transform 0.3s ease;
+  }
+}

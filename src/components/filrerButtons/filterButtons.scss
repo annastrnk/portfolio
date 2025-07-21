@@ -1,0 +1,38 @@
+
+
+.filter-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0;
+  
+    &-item {
+      border: none;
+      border-radius: 16px;
+      padding: 15px;
+      font-size: 14px;
+      color: var(--color-text);
+      &:active {
+        background-color: var(--color-hover);
+      }
+    }
+   
+  }
+
+  .active-btn{
+    background-color:var(--color-text-contrast);
+    color: var(--color-text-second);
+  }
+   
+
+  @media screen and (min-width: 1024px) {
+
+    .filter-btns{
+      gap: 30px;
+    .filter-btns-item{
+      font-size: 18px;
+      padding: 15px 25px;
+    }
+  }
+    }
