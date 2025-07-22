@@ -12,21 +12,21 @@ export default function ContactsPage() {
 
       <div className="contacts-wrapper">
         <ContactItem
-          icon="../../../src/assets/icons8-phone-75.png"
+          icon="/images/phone.png"
           alt="Phone Icon"
           title="PHONE"
           link="38 063 762 74 77"
           href="tel:380637627477"
         />
         <ContactItem
-          icon="../../../src/assets/icons8-email-75.png"
+          icon="/images/email.png"
           alt="Email Icon"
           title="EMAIL"
           link="starenka.annaa@gmail.com"
           href="mailto:starenka.annaa@gmail.com"
         />
         <ContactItem
-          icon="../../../src/assets/icons8-telegram-75.png"
+          icon="../../../public/images/telegram.png"
           alt="Telegram Icon"
           title="TELEGRAM"
           link="ann_strnk"

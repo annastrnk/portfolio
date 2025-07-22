@@ -1,48 +1,48 @@
 const skillsCurrent = [
   {
     id: 1,
-    src: "../src/assets/html.png",
+    src: "/images/html.png",
     alt: "HTML",
   },
   {
     id: 2,
-    src: "../src/assets/css.png",
+    src: "/images/css.png",
     alt: "CSS",
   },
   {
     id: 3,
-    src: "../src/assets/js.png",
+    src: "/images/js.png",
     alt: "JavaScript",
   },
 
   {
     id: 4,
-    src: "../src/assets/reacr.png",
+    src: "/images/reacr.png",
     alt: "REACT",
   },
   {
     id: 5,
-    src: "../src/assets/sass.png",
+    src: "/images/sass.png",
     alt: "SAAS",
   },
   {
     id: 6,
-    src: "../src/assets/nodeJs.png",
+    src: "/images/nodeJs.png",
     alt: "NodeJs",
   },
   {
     id: 7,
-    src: "../src/assets/git.png",
+    src: "/images/git.png",
     alt: "Git",
   },
   {
     id: 8,
-    src: "../src/assets/typescript.png",
+    src: "/images/typescript.png",
     alt: "TypeScript",
   },
   {
     id: 9,
-    src: "../src/assets/next-js-seeklogo.svg",
+    src: "/images/next-js-seeklogo.svg",
     alt: "NextJS",
   }
 ];

@@ -45,13 +45,13 @@ export default function ContactNav() {
         </svg>
       </a>
       <a
-        href="../../../src/assets/SrarenkaAnna_cv_Frontend.pdf"
+        href="/images/SrarenkaAnna_cv_Frontend.pdf"
         download="Dowmload CV"
       >
         <div className={darkMode ? "cv-block-light" : "cv-block-dark"}>
           <img
             className="contact-icon"
-            src="../../../src/assets/download30.png"
+            src="/images/download30.png"
             alt=""
           />
           <p>Dowmload my CV</p>
