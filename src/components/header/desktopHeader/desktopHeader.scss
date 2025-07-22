@@ -1,7 +1,5 @@
 .desktopNavigation {
   display: none;
-
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -15,5 +13,7 @@
     padding: 20px;
     height: auto; 
     transition: transform 0.3s ease;
+    background-color: var(--color-font-main);
+    opacity: 0.8;
   }
 }

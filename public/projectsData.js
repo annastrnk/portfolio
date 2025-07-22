@@ -44,16 +44,7 @@ const projects = [
    
     },
 
-    {
-        id: 6,
-        title: "JAVASCRIPT",
-        tech: ["JAVASCRIPT"],
-        image: "...",
-        link: "https://...",
-        linkCode: "Simple weather forecast app",
-   
-    },
-
+ 
    
   ];
   

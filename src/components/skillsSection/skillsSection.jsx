@@ -7,9 +7,8 @@ export default function SkillsSection() {
       <div className="skills-img">
         <div className="skills-img-wrapper">
           {skillsCurrent.map((img) => (
-            <div className="skills-img-wrapper-item">
+            <div key={img.id}  className="skills-img-wrapper-item">
             <img
-              key={img.id}
               src={img.src}
               alt={img.alt}
             />

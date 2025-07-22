@@ -8,7 +8,7 @@ export default function AboutPage() {
       <div className="container">
         <div className="about-section">
           <AboutMe />
-          <div class="double-line-separator "></div>
+          <div className="double-line-separator "></div>
           <SkillsSection />
         </div>
       </div>

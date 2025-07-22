@@ -1,66 +1,69 @@
 .toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__switch {
+    width: 140px;
+    height: 40px;
+    position: relative;
+    display: inline-flex;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-text-contrast);
+    border-radius: 40px;
+    transition: background-color 0.4s;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding: 0 20px;
+  }
+
+  &__thumb {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    &__switch {
-      width: 140px; 
-      height: 40px;
-      position: relative;
-    display: inline-block; 
-  
-      input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-      }
-    }
-  
-    &__slider {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      height: 100%;
-      background-color: var(--color-text-accent);
-      border-radius: 40px;
-      transition: background-color 0.4s;
-      font-size: 14px;
-      font-weight: 600;
-      color: #fff;
-      position: relative;
-      padding: 0 20px; 
-    }
+    top: 5px;
+    left: 5px;
+    transition: transform 0.4s;
+    font-size: 16px;
+    z-index: 2;
 
-  
-    &__thumb {
-      position: absolute;
-      height: 30px;
-      width: 30px;
-      border-radius: 50%;
-      background-color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      top: 5px;
-      left: 5px;
-      transition: transform 0.4s;
-      font-size: 16px;
-      z-index: 2;
-  
-      img {
-        width: 18px;
-        height: 18px;
-      }
-    }
-  
-    &__switch input:checked + .toggle__slider {
-      background-color:var(--color-hover) ;
-      justify-content: flex-start;
-  
-      .toggle__thumb {
-        transform: translateX(100px);
-      }
+    img {
+      width: 18px;
+      height: 18px;
     }
   }
-  
 
+  &__switch input:checked + .toggle__slider {
+    background-color: var(--color-hover);
+    justify-content: flex-start;
+
+    .toggle__thumb {
+      transform: translateX(100px);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    &__slider {
+      background-color: var(--color-text-accent);
+    }
+  }
+}

@@ -1,11 +1,8 @@
 import "./contactsPage.scss";
-// import { useContext } from "react";
-// import { ThemeContext } from "../../context/ThemeContext";
 import ContactForm from "../../components/contactForm/contactForm";
 import ContactItem from "../../components/contacrItem/contactItem";
 
 export default function ContactsPage() {
-  // const { darkMode, toggleDarkMode } = useContext(ThemeContext);
 
   return (
     <div className="container">

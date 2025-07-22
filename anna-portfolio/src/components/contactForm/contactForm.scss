@@ -1,0 +1,96 @@
+
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.contact-form {
+ width: 80%;
+  border-radius: 20px;   
+  padding: 30px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &-info {
+    display: flex;
+    gap: 30px;
+  }
+
+  input,
+  textarea {
+    // background-color: rgb(139, 145, 142);
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    transition: 0.3s ease;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(203, 201, 207, 0.818);
+    }
+  }
+
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  .field-subject{
+    width: 43%;
+  }
+
+  .bnt-submit {
+    background: var(--color-text-contrast);
+    width: 20%;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s ease;
+   
+
+    &:hover {
+      background: var(--color-hover);
+    }
+  }
+
+}
+
+.status-message {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+
+    &.success {
+    //   background-color: ;
+      color: var(--color-text-contrast);
+    }
+
+    &.error {
+    //   background-color: #f8d7da;
+      color: #721c24;
+    }
+  }
+
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+

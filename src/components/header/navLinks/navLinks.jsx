@@ -12,7 +12,7 @@ export default function NavLinks({ isClicked = false, closeMenu = () => {} }) {
   return (
     <nav className="header-main-nav">
       {["/", "/about", "/portfolio", "/contacts"].map((path, index) => {
-        const labels = ["Головна", "About me", "Portfolio", "Contacts"];
+        const labels = ["Main", "About me", "Portfolio", "Contacts"];
         return (
           <NavLink
             key={index}
