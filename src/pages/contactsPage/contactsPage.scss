@@ -1,13 +1,18 @@
 .contacts-title {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 60px;
 }
-
+.contact-form-title{
+    text-align: center;
+    font-size: 30px;
+  }
 .contacts-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   gap: 30px;
+
+  
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;

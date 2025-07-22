@@ -17,6 +17,7 @@
   &.open {
     .mobileNavigation-menu {
       display: flex;
+      position: static;
       flex-direction: column;
       align-items: center;
       gap: 24px;

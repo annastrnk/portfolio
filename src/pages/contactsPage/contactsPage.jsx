@@ -34,7 +34,7 @@ export default function ContactsPage() {
         />
       </div>
       <div className="contacts-email">
-        <h3 className="title contacts-title">DROP ME AN EMAIL</h3>
+        <h3 className="title contact-form-title">DROP ME AN EMAIL</h3>
         <ContactForm />
       </div>
     </div>
