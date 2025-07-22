@@ -26,7 +26,7 @@ export default function ContactsPage() {
           href="mailto:starenka.annaa@gmail.com"
         />
         <ContactItem
-          icon="../../../public/images/telegram.png"
+          icon="/images/telegram.png"
           alt="Telegram Icon"
           title="TELEGRAM"
           link="ann_strnk"

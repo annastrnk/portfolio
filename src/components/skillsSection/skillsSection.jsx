@@ -12,7 +12,7 @@ export default function SkillsSection() {
               src={img.src}
               alt={img.alt}
             />
-            <span>{img.alt}</span>
+            <span className="content-text">{img.alt}</span>
             </div>
           ))}
         </div>

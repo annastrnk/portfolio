@@ -12,7 +12,7 @@ export default function MainPage() {
           <div className="main-section-text title">
             <p className="accent-text-title">Anna Starenka</p>
             <p>
-              <span className="content-text-accent">Front-end developer</span>
+              <span className="content-text-accent">Front-end developer </span>
               with a passion for creating beautiful and responsetive websites
             </p>
             <ContactNav />
