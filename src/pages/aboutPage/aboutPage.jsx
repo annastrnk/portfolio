@@ -4,7 +4,6 @@ import "./aboutPage.scss";
 
 export default function AboutPage() {
   return (
-    <section>
       <div className="container">
         <div className="about-section">
           <AboutMe />
@@ -12,6 +11,5 @@ export default function AboutPage() {
           <SkillsSection />
         </div>
       </div>
-    </section>
   );
 }

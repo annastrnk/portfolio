@@ -3,7 +3,7 @@
 .about-section {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  // margin-top: 60px;
 }
 
 .double-line-separator {
@@ -49,3 +49,9 @@
     background: var(--color-text-contrast);
   }
 }
+  @media screen and (min-width: 1024px) {
+ .about-section{
+  margin-top: 60px;
+ }
+  }
+

@@ -13,12 +13,14 @@ function App() {
   return (
     <ThemeProvider>
       <Header />
+  
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
       </Routes>
+
     </ThemeProvider>
   );
 }

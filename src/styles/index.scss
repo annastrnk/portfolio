@@ -1,12 +1,16 @@
 @use "vars" as *;
 @use "typography" as *;
 
+// *{
+//   outline: 1px solid red;
+// }
+
 body {
   background-color: var(--color-font-main);
 }
 
 .container {
-  width: 100%;
+
   max-width: 1400px;
   padding: 16px 20px;
   margin: 0 auto;
