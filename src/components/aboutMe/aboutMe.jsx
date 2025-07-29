@@ -8,6 +8,7 @@ import workData from "../../../public/workData"
 
 export default function AboutMe() {
   return (
+<>
     <div className="about-me">
       <h3 className="title about-me-title">
         ABOUT <span className="content-text-accent">ME</span>
@@ -29,28 +30,13 @@ export default function AboutMe() {
         <p>
           I’m passionate about clean code, great UI/UX, and continuous learning
         </p>
+        </div>
+      </div>
+      <div className="about-me-experience">
         <TimelineItem img={imageStudy} arr={studyData} />
         <TimelineItem img={imageWork} arr={workData}/>
-
-        {/* <p>
-            A graduate of
-            <span className="content-text-accent"> DAN.IT Education</span>
-            I’ve worked on real-world projects that sharpened my skills in
-            state management, routing, and performance optimization.
-          </p>
-          <a
-            className="content-text-accent"
-            href="https://certificates.dan-it.com.ua/certificates/frontend/anna-starenka"
-            target="_blank"
-          >
-            Diploma
-          </a> */}
+        </div>
+</>
        
-        {/* <p>
-            Currently based in
-            <span className="content-text-accent"> Kyiv</span>
-          </p> */}
-      </div>
-    </div>
   );
 }

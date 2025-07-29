@@ -4,7 +4,7 @@ export default function TimelineItem({ arr, img }) {
   return (
     <div className="timeLine">
       <img className="timeLine-img" src={img} />
-      <div color="timeLine-wrapper">
+      <div className="timeLine-wrapper">
         {arr.map((item) => (
           <div key={item.id} className="timeLine-item">
             <p className="timeline-item-data">{item.date}</p>

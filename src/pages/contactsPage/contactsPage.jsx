@@ -1,10 +1,12 @@
 import "./contactsPage.scss";
 import ContactForm from "../../components/contactForm/contactForm";
 import ContactItem from "../../components/contacrItem/contactItem";
+import PageWrapper from "../../components/animation/pageWrapper/pageWrapper";
 
 export default function ContactsPage() {
 
   return (
+    <PageWrapper>
     <div className="container">
       <h3 className="title contacts-title">
         Contact <span className="content-text-accent">ME</span>
@@ -38,5 +40,6 @@ export default function ContactsPage() {
         <ContactForm />
       </div>
     </div>
+    </PageWrapper>
   );
 }

@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import projects from "../../../public/projectsData";
 import PortfolioItem from "../../components/portfolioItem/portfolioItem";
 import FilterButtons from "../../components/filrerButtons/filterButtons";
+import PageWrapper from "../../components/animation/pageWrapper/pageWrapper";
 
 export default function PortfolioPage() {
   const selectedTechnology = useSelector((state) => state.filters.technology);
@@ -13,6 +14,7 @@ export default function PortfolioPage() {
     : projects;
 
   return (
+    <PageWrapper>
     <div className="container">
       <h2 className="title title-portfolio">MY WORKS</h2>
       <FilterButtons />
@@ -21,6 +23,7 @@ export default function PortfolioPage() {
           <PortfolioItem key={project.id} project={project} />
         ))}
       </div>
-    </div>
+    </div> 
+    </PageWrapper>
   );
 }

@@ -33,3 +33,9 @@
     flex-direction: row;
   }
 }
+
+.dark-mode{
+  .nav-link{
+    color:var(--color-dark-text-accent)
+  }
+}

@@ -1,9 +1,11 @@
 import SkillsSection from "../../components/skillsSection/skillsSection";
 import AboutMe from "../../components/aboutMe/aboutMe";
 import "./aboutPage.scss";
+import PageWrapper from "../../components/animation/pageWrapper/pageWrapper";
 
 export default function AboutPage() {
   return (
+    <PageWrapper>
       <div className="container">
         <div className="about-section">
           <AboutMe />
@@ -11,5 +13,6 @@ export default function AboutPage() {
           <SkillsSection />
         </div>
       </div>
+      </PageWrapper>
   );
 }
