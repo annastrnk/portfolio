@@ -5,6 +5,7 @@ import ContactsPage from "../contactsPage/contactsPage";
 import PortfolioPage from "../portfolioPage/portfolioPage";
 import "./mainPage.scss";
 import FadeInWhenVisible from "../../components/animation/fadeInWhenVisible/fadeInWhenVisible";
+import BlinkingCat from "../../components/cats/blinkingCat";
 
 export default function MainPage() {
   return (
@@ -14,7 +15,11 @@ export default function MainPage() {
           <div className="container">
             <div className="main-section">
               <div className="main-section-text title">
-                <p className="accent-text-title">Anna Starenka</p>
+                <div className="main-section-text-wrapper">
+                   <span className="accent-text-title">Anna Starenka</span>
+                <BlinkingCat/>
+                </div>
+               
                 <p>
                   <span className="content-text-accent">
                     Front-end developer{" "}
