@@ -7,14 +7,19 @@ export default function TimelineItem({ arr, img }) {
       <div className="timeLine-wrapper">
         {arr.map((item) => (
           <div key={item.id} className="timeLine-item">
-            <p className="timeline-item-data">{item.date}</p>
-            <p className="timeline-item-name">
+            <p className="timeLine-item-data">{item.date}</p>
+            <p className="timeLine-item-name">
               {item.name ? item.name : item.position}
             </p>
-            <p className="timeline-item-company">{item.company}</p>
-            <p className="timeline-item-desc">{item.description}</p>
+            <p className="timeLine-item-company">{item.company}</p>
+            <ul className="timeLine-item-desc">
+              {item.description.map((line,index)=>(
+                <li key={index}>{line}</li>
+              ))}
+            
+            </ul>
             {item.certificate ? (
-              <a className="timeline-item-link" href={item.certificate}>
+              <a className="timeLine-item-link" href={item.certificate}>
                 Certificate
               </a>
             ) : (

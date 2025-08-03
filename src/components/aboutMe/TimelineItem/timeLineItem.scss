@@ -1,59 +1,67 @@
 .timeLine {
   display: flex;
   align-items: center;
-
   gap: 30px;
-
 
   &-img {
     width: 50px;
     height: 50px;
   }
 
-  &-wrapper{
-display: flex;
-flex-direction: column;
-gap:20px
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   &-item {
     padding-bottom: 10px;
     max-width: 1100px;
-    // border: 1px solid var(--color-text-contrast);
     padding: 20px 15px 15px;
     border-radius: 12px;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-   
+    &-data {
+      color: var(--color-text-contrast);
+      font-weight: 600;
+    }
+
+    &-name {
+      font-weight: 600;
+      font-size: 20px;
+    }
+    &-name:hover,
+    &-company:hover {
+      color: var(--color-text-contrast);
+    }
+
+    &-company {
+      font-weight: 600;
+    }
+    &-link {
+      color: var(--color-text-contrast);
+      font-weight: 600;
+    }
+    &-desc {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+      list-style-type: disc;
+
+      li {
+        margin-bottom: 0.4rem;
+        line-height: 1.5;
+        font-size: 0.95rem;
+        color: #444;
+
+        &::marker {
+          color: var(--color-hover);
+        }
+      }
+    }
   }
-
-}
-.timeline-item-data{
-    color: var(--color-text-contrast);
-    font-weight: 600;
-}
-
-.timeline-item-name{
-    // color: var(--color-text-contrast);
-    font-weight: 600;
-    font-size: 20px; 
-}
-.timeline-item-name:hover,
-.timeline-item-company:hover{
-    color: var(--color-text-contrast);
-}
-
-.timeline-item-company{
-    // color: var(--color-text-contrast);
-    font-weight: 600;
-}
-.timeline-item-link{
-    color: var(--color-text-contrast);
-    font-weight: 600;
-}
-
-@media screen and (min-width: 1024px) {
-.timeLine{
+  @media screen and (min-width: 1024px) {
     flex-direction: row;
-}
+    &-item {
+      width: 1000px;
+    }
   }
-
+}

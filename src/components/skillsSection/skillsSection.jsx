@@ -1,6 +1,5 @@
 import "./skillsSection.scss";
 import skillsCurrent from "../../../public/skillsCurrent";
-import SleepingCat from "../cats/sleepingCat";
 
 export default function SkillsSection() {
   return (
@@ -20,7 +19,6 @@ export default function SkillsSection() {
       </div>
       <h3 className="title skills-text">
         MY <span className="content-text-accent">SKILLS</span>
-        <SleepingCat/>
       </h3>
     </div>
   );

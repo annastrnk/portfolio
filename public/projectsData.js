@@ -16,13 +16,13 @@ const projects = [
         linkCode: "https://github.com/annastrnk/lotr-chatAi-app",
    
     },
-    {
-        id: 3,
-        title: "The Ham",
-        tech: ["JAVASCRIPT"],
-        image: "/images/the-ham.png",
-        link: "https://annastrnk.github.io/the-ham/",
-        linkCode: "https://github.com/annastrnk/the-ham",
+    {   id: 3,
+        title: "Vegan Dragon",
+        tech: ["TypeScript","REACT"],
+        image: "/images/vegan-dragon.png",
+        link: "https://vegan-dragon.vercel.app/",
+        linkCode: "https://github.com/annastrnk/vegan-dragon",
+     
    
     },
     {
@@ -42,7 +42,14 @@ const projects = [
         link: "https://medical-center-eight.vercel.app/.",
         linkCode: "https://github.com/annastrnk/medical-center",
    
-    },
+    },{
+        id: 6,
+        title: "The Ham",
+        tech: ["JAVASCRIPT"],
+        image: "/images/the-ham.png",
+        link: "https://annastrnk.github.io/the-ham/",
+        linkCode: "https://github.com/annastrnk/the-ham",
+    }
 
  
    

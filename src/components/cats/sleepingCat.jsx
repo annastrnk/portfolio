@@ -12,13 +12,13 @@ export default function SleepingCat() {
                         <div></div>
                     </div>
                     <div className="face-sleeping">
-                        <div class="eyes">
+                        <div className="eyes">
                             <div></div>
                             <div></div>
                         </div>
     
                         <div className="nose">
-                            <div class="mustache">
+                            <div className="mustache">
                                 <div></div>
                                 <div></div>
                                 <div></div>

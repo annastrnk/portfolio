@@ -1,9 +1,9 @@
 .hamburgerMenu {
   position: absolute;
-  // top: 20px;
   right: 20px;
   z-index: 1010;
   cursor: pointer;
+  fill: var(--color-text-contrast);
 }
 
 .mobileNavigation {
@@ -22,7 +22,6 @@
       align-items: center;
       gap: 24px;
       padding: 40px 0;
-      // height: 100vh;
       opacity: 0.9;
       border-top: 2px solid var(--color-text-contrast);
     }
@@ -34,8 +33,12 @@
   justify-content: space-between;
   align-items: center;
   opacity: 0.9;
-  padding: 30px 20px;
-  
+  padding: 20px 20px;
+  &-logo {
+    color: var(--color-text-contrast);
+    font-weight: 800;
+    text-shadow: 1px 1px 2px var(--color-text-accent);
+  }
 }
 
 @media screen and (min-width: 1024px) {

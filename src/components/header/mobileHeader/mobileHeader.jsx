@@ -14,11 +14,13 @@ export default function MobileHeader() {
 
   return (
     <div className={`mobileNavigation ${click ? "open" : "closed"}`}>
-      <div className="mobileHeader-bar container"
-       style={{
-        backgroundColor: darkMode ? "#2E2E2E" : "rgb(162 167 154 / 90%",
-      }}>
-        <span>AS</span>
+      <div
+        className="mobileHeader-bar container"
+        style={{
+          backgroundColor: darkMode ? "#2E2E2E" : "rgb(214 215 211)",
+        }}
+      >
+        <span className="mobileHeader-bar-logo">AS</span>
 
         {click ? (
           <MdClose className="hamburgerMenu" size="30px" onClick={toggleMenu} />
@@ -29,15 +31,13 @@ export default function MobileHeader() {
             onClick={toggleMenu}
           />
         )}
-
-
       </div>
 
       {click && (
         <div
           className="mobileNavigation-menu container"
           style={{
-            backgroundColor: darkMode ? "#2E2E2E" : "rgb(162 167 154 / 90%",
+            backgroundColor: darkMode ? "#2E2E2E" : "rgb(214 215 211)",
           }}
         >
           <NavLinks isClicked={true} closeMenu={closeMenu} />

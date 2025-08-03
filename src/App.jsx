@@ -8,7 +8,6 @@ import MainPage from "./pages/mainPage/mainPage";
 import AboutPage from "./pages/aboutPage/aboutPage";
 import PortfolioPage from "./pages/portfolioPage/portfolioPage";
 import ContactsPage from "./pages/contactsPage/contactsPage";
-import { useEffect } from "react";
 import ScrollToTop from "./components/animation/scrollToTop/scrollToTop";
 import { AnimatePresence } from "framer-motion";
 
@@ -20,7 +19,7 @@ function App() {
       <ScrollToTop />
       <Header />
       <AnimatePresence mode="wait">
-        <Routes>
+        <Routes location={location} key={location.pathname}>
           <Route path="/" element={<MainPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
