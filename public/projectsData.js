@@ -4,6 +4,7 @@ const projects = [
       title: "Weather App",
       tech: ["REACT"],
       image: "images/weatherAppImg.png",
+      description: "Weather app with real-time data from OpenWeather API",
       link: "https://annastrnk.github.io/weather-app/",
      linkCode: "https://github.com/annastrnk/weather-app",
     },
@@ -12,6 +13,7 @@ const projects = [
         title: "LOTR AI APP",
         tech: ["REACT", "EXPRESS"],
         image: "/images/LOTRImg.png",
+        description: "AI chat app with LOTR characters using React, Express, and OpenAI API",
         link: "https://lotr-chat-ai-app.vercel.app/",
         linkCode: "https://github.com/annastrnk/lotr-chatAi-app",
    
@@ -20,6 +22,7 @@ const projects = [
         title: "Vegan Dragon",
         tech: ["TypeScript","REACT"],
         image: "/images/vegan-dragon.png",
+        description: "Snake game built with React, TypeScript, and custom global state using useContext and useReducer",
         link: "https://vegan-dragon.vercel.app/",
         linkCode: "https://github.com/annastrnk/vegan-dragon",
      
@@ -30,6 +33,7 @@ const projects = [
         title: "Digital Design",
         tech: ["HTML + CSS"],
         image: "/images/digital-design.png",
+        description: "Responsive landing page designed",
         link: "https://annastrnk.github.io/digital-design/",
         linkCode: "https://github.com/annastrnk/digital-design",
    
@@ -39,6 +43,7 @@ const projects = [
         title: "Medical Center",
         tech: ["REACT"],
         image: "/images/medical-center.png",
+        description: "Responsive medical app with React, Redux Toolkit, and Bootstrap 5 for managing clinic data",
         link: "https://medical-center-eight.vercel.app/.",
         linkCode: "https://github.com/annastrnk/medical-center",
    
@@ -47,6 +52,7 @@ const projects = [
         title: "The Ham",
         tech: ["JAVASCRIPT"],
         image: "/images/the-ham.png",
+        description: "Creative animated web experiment built with JavaScript and SCSS",
         link: "https://annastrnk.github.io/the-ham/",
         linkCode: "https://github.com/annastrnk/the-ham",
     }

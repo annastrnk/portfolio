@@ -33,7 +33,7 @@ const skillsCurrent = [
   {
     id: 7,
     src: "/images/tailwind.png",
-    alt: "Tailwind CSS",
+    alt: "Tailwind",
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const skillsCurrent = [
   {
     id: 12,
     src: "/images/redux.png",
-    alt: "Redux / Redux toolkit",
+    alt: "Redux",
   },
 ];
 

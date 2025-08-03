@@ -7,9 +7,11 @@ export default function PortfolioItem({ project }) {
         className="portfolio-item-img"
         src={project.image}
         alt={project.title}
+        loading="lazy"
       />
       <p className="title-item">{project.title}</p>
       <p>{project.technologies}</p>
+      <p >{project.description}</p>
       <div className="portfolio-item-links">
         <a className="link-project content-text" href={project.link} target="_blank">
          Live Website
