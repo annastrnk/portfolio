@@ -14,7 +14,7 @@ export default function TimelineItem({ arr, img }) {
             <p className="timeLine-item-company">{item.company}</p>
             <ul className="timeLine-item-desc">
               {item.description.map((line,index)=>(
-                <li key={index}>{line}</li>
+                <li className="content-text" key={index}>{line}</li>
               ))}
             
             </ul>

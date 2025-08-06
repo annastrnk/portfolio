@@ -5,10 +5,11 @@ const workData = [
       position: "Fronend Developer",
       company:"Lit Studio",
       description: [
-        "Developed responsive and cross-browser user interfaces for a CRM platform using React, Redux Toolkit, JavaScript, and SCSS.",
-        "Integrated RESTful APIs and implemented dynamic, validated forms using Formik and Yup for real-time user interaction.",
-        "Converted Figma UI/UX designs into reusable, scalable, and maintainable React components.",
-        "Refactored legacy class-based components into functional components using React Hooks to improve performance and readability."
+        'Developed and maintained responsive SPA using React, JavaScript, Redux Toolkit, and SCSS/SAAS',
+        'Integrated REST APIs for dynamic data rendering (product catalog, shopping cart, orders) across multiple client projects',
+        'Optimized rendering performance using React.memo, lazy-loading, and code-splitting techniques',
+        'Built adaptive, mobile-friendly UI from Figma designs, ensuring cross-browser compatibility',
+        'Collaborated with cross-functional teams in a Scrum/Agile environment, participated in daily stand-ups, sprint planning, and code reviews'
       ]
     
       
