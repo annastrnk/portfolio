@@ -11,6 +11,16 @@ const studyData = [
   },
   {
     id: 2,
+    date: "Jule-August 2025",
+    name: "Mastering React (2025)",
+    company: "Udemy",
+    description:[
+      "An advanced React course focused on building scalable, production-ready applications with TypeScript, Redux, React Query, and modern tooling. Through real-world projects and interactive exercises, I mastered advanced patterns and best practices under the guidance of an instructor with 7+ years of React experience."],
+    certificate:
+      "https://www.udemy.com/certificate/UC-42f8f68d-8d2a-44bf-bbb9-a78558d563a5/",
+  },
+  {
+    id: 3,
     date: "March 2023 - June 2024",
     name: "Frontend course ( React )",
     company: "DanIt",
