@@ -49,14 +49,14 @@ export default function ContactForm() {
       >
         <Form className="contact-form">
           <div className="contact-form-info">
-            <Field type="text" id="name" name="name" placeholder="Your name" />
+            <Field type="text" id="name" name="name" placeholder="YOUR NAME" />
             <ErrorMessage name="name" component="div" className="error" />
 
             <Field
               type="email"
               id="email"
               name="email"
-              placeholder="you@example.com"
+              placeholder="YOU@EXAMPLE.COM"
             />
             <ErrorMessage name="email" component="div" className="error" />
           </div>
@@ -65,7 +65,7 @@ export default function ContactForm() {
             type="text"
             id="subject"
             name="subject"
-            placeholder="Subject"
+            placeholder="SUBJECT"
             className="field-subject"
           />
           <ErrorMessage name="subject" component="div" className="error" />
@@ -74,7 +74,7 @@ export default function ContactForm() {
             as="textarea"
             id="message"
             name="message"
-            placeholder="Write your message here..."
+            placeholder="WRITE YOUR MESSAGE HERE ..."
           />
           <ErrorMessage name="message" component="div" className="error" />
 

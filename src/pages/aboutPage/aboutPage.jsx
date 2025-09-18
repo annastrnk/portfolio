@@ -3,19 +3,17 @@ import AboutMe from "../../components/aboutMe/aboutMe";
 import "./aboutPage.scss";
 import PageWrapper from "../../components/animation/pageWrapper/pageWrapper";
 import FadeInWhenVisible from "../../components/animation/fadeInWhenVisible/fadeInWhenVisible";
+import Experiense from "../../components/experince/experience";
 
 export default function AboutPage() {
   return (
     <PageWrapper>
-      <div className="container">
+      {/* <div className="container"> */}
         <div className="about-section">
           <AboutMe />
-          <div className="double-line-separator "></div>
-          <FadeInWhenVisible delay={0.2}>
-            <SkillsSection />
-          </FadeInWhenVisible>
+          <Experiense/>
         </div>
-      </div>
+      {/* </div> */}
     </PageWrapper>
   );
 }

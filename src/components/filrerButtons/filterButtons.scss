@@ -3,22 +3,31 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin: 40px 0;
 
   &-item {
     border: none;
-    border-radius: 16px;
-    padding: 15px;
+    padding: 15px 25px;
     font-size: 14px;
-    color: var(--color-text);
+    color: var(--color-dark);
+    background-color: var(--color-light-text);
+    font-family: "Neutral Sans Regular";
+    font-family: Neutral Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 6%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
     &:active {
-      background-color: var(--color-hover);
+      background-color: var(--color-accent);
     }
   }
 }
 
 .active-btn {
-  background-color: var(--color-text-contrast);
+  background-color: var(--color-accent);
   color: var(--color-text-second);
 }
 

@@ -9,22 +9,43 @@ ul {
   list-style: none;
 }
 
+.title-section{
+  font-size: 480px;
+  font-weight: 500;
+  letter-spacing:-1.34px;
+  font-family: "Neutral Sans Meidum";
+  text-transform: uppercase;
+}
+
+.text-main{
+  font-family: "Neutral Sans Meidum";
+  font-size: 82px;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  line-height: 100px;
+
+}
+
+
+
+
+
 .accent-text-title {
   color: var(--color-text-contrast);
   font-size: 28px;
   font-weight: 500;
 }
 
-.content-text {
-  color: var(--color-text);
-  font-size: 14px;
-  font-weight: 400;
+// .content-text {
+//   color: var(--color-text);
+//   font-size: 14px;
+//   font-weight: 400;
 
-  &-accent {
-    color: var(--color-text-contrast);
-    font-weight: 600;
-  }
-}
+//   &-accent {
+//     color: var(--color-text-contrast);
+//     font-weight: 600;
+//   }
+// }
 
 .title {
   color:var(--color-title);
@@ -53,13 +74,13 @@ ul {
       color: var(--color-dark-text-accent);
     }
   }
-  .content-text {
-    color: var(--color-dark-text);
+  // .content-text {
+  //   color: var(--color-dark-text);
 
-    &-accent{
-      color: var(--color-dark-text-accent);
-    }
-  }
+  //   &-accent{
+  //     color: var(--color-dark-text-accent);
+  //   }
+  // }
 
 }
 
@@ -68,16 +89,17 @@ ul {
   .accent-text-title {
     font-size: 36px;
     font-weight: 500;
+    
   }
   
-  .content-text {
+  // .content-text {
 
-    font-size: 18px;
-    font-weight: 400;
-    &-accent {
-      font-weight: 600;
-    }
-  }
+  //   font-size: 18px;
+  //   font-weight: 400;
+  //   &-accent {
+  //     font-weight: 600;
+  //   }
+  // }
   
   .title {
 

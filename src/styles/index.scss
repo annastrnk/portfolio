@@ -4,19 +4,43 @@
 // *{
 //   outline: 1px solid red;
 // }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Neutral Sans Black";
+  src: url("/fonts/NeutralSans-Black-BF673417d54e198.otf") format("opentype");
+}
+@font-face {
+  font-family: "Neutral Sans Bold";
+  src: url("/fonts/NeutralSans-Bold-BF673417d49d91f.otf") format("opentype");
+}
+@font-face {
+  font-family: "Neutral Sans Meidum";
+  src: url("/fonts/NeutralSans-Meidum-BF673417d4df1bc.otf") format("opentype");
+}
+@font-face {
+  font-family: "Neutral Sans Regular";
+  src: url("/fonts/NeutralSans-Regular-BF673417d506f9f.otf") format("opentype");
+}
 
 body {
-  background-color: var(--color-font-main);
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 .container {
-
-  max-width: 1400px;
-  padding: 16px 20px;
+  max-width: 1574px;
   margin: 0 auto;
 }
-img {
-  width: 100%;
-  height: 100%;
+
+.horizontal-section {         
+  overflow: hidden;
+}
+
+.horizontal-title {
+  white-space: nowrap;
+  will-change: transform;
 }

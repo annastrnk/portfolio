@@ -1,14 +1,15 @@
 
 .title-portfolio{
-    text-align: center;
-    margin-top: 60px;
+  color: var(--color-dark-accent);
+  padding: 180px 0 120px;
 }
 
 .portfolio-grid{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
+    padding-top: 60px;
 }
 
 

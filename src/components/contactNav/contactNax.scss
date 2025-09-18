@@ -1,142 +1,41 @@
 .contacts-nav {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+  margin-top: 154px;
 
-  .contact-icon,
-  .contact-icon-download {
-    width: 40px;
-    height: 40px;
-    fill: #000;
-    transition: fill 0.3s ease, transform 0.3s ease;
-
-    &.dark {
-      fill: #fff;
-    }
-
-    &:hover {
-      fill: #3b7d2a;
-      transform: scale(1.1);
-    }
-  }
-
-  .cv-block-dark,
-  .cv-block-light {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 18px;
-    border-radius: 30px;
-    padding: 0 10px;
-    border: 1px solid;
+  .cv-block {
+    color: var(--color-accent);
+    font-size: 28px;
+    letter-spacing: 4px;
+    
     transition: all 0.3s ease;
     cursor: pointer;
+  }
 
-    svg {
-      transition: fill 0.3s ease;
+  .contacts-social {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 27px;
+
+    .contact-icon {
+      width: 25px;
+      height: 25px;
+      fill: #ffffff;
+      transition: fill 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        fill: var(--color-accent);
+        transform: scale(1.1);
+      }
     }
 
-    &:hover {
-      background-color: #3b7d2a;
-      color: #fff;
-      transform: scale(1.1);
-
-      svg {
-        fill: #fff;
+    @media screen and (min-width: 1024px) {
+      .contact-icon {
+        width: 75px;
+        height: 75px;
       }
     }
   }
-
-  .cv-block-dark {
-    border-color: black;
-    color: black;
-  }
-
-  .cv-block-light {
-    border-color: white;
-    color: white;
-  }
-
-  @media screen and (min-width: 1024px) {
-    justify-content: start;
-
-    .contact-icon,
-    .contact-icon-download {
-      width: 75px;
-      height: 75px;
-
-    }}}
-
-// .contacts-nav {
-//   display: flex;
-//   align-items: center;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   gap: 20px;
-
-//   .contact-icon {
-//     width: 40px;
-//     height: 40px;
-//     fill:#000;
-//     transition: fill 0.3s ease, transform 0.3s ease;
-
-//     &.dark{
-//       fill:#fff
-//     }
-//     &:hover{
-//       fill: #3b7d2a;
-//       transform: scale(1.1);
-//     }
-
-//     &-download{
-//       width: 40px;
-//       height: 40px;
-//       fill:#000;
-//       transition: fill 0.3s ease, transform 0.3s ease;
-//       &.dark{
-//         fill:#fff
-//       }
-//       &:hover{
-//         fill:#fff
-//       }
-//     }
-//   }
-
-//   .cv-block-dark,
-//   .cv-block-light {
-//     display: flex;
-//     align-items: center;
-//     gap: 5px;
-//     font-size: 18px;
-//     border-radius: 30px;
-//     padding: 0 10px;
-//     transition: fill 0.3s ease, transform 0.3s ease; 
-//     &:hover {
-//       background-color: #3b7d2a;
-//       color: white;
-//       border-color: white;
-//       transform: scale(1.1);
-
-//       .contact-icon-download {
-//         fill: #fff;
-//       }
-//     }
-//   }
-
-//   .cv-block-dark {
-//     border: 1px solid black;
-//   }
-
-//   .cv-block-light {
-//     border: 1px solid white;
-//   }
-//   @media screen and (min-width: 1024px) {
-//     justify-content: start;
-//     .contact-icon {
-//       width: 75px;
-//       height: 75px;
-//     }
-//   }
-// }
+}

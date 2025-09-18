@@ -1,20 +1,45 @@
-.contacts-title {
-  text-align: center;
-  margin-top: 60px;
+.contacts-section{
+background-color: var(--color-dark);
+margin-top: 180px;
+padding: 130px 0 200px;
+
+.contacts-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-contacts {
+  font-family: "Neutral Sans Bold";
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 123px;
+  letter-spacing: -0.4px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 56px;
 }
 .contact-form-title{
-    text-align: center;
-    font-size: 30px;
+  font-family: "Neutral Sans Bold";
+  font-weight: 700;
+color:#FFFFFF ;
+  font-size: 36px;
+  line-height: 31.2px;
+  letter-spacing: -0.3px;
+  vertical-align: middle;
+  
   }
 .contacts-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 30px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
+  // gap: 30px;
 
   
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
   }
+}
 }
