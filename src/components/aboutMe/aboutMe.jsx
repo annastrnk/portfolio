@@ -18,12 +18,11 @@ export default function AboutMe() {
 
        <div className="about-me-content-img">
            <img
-          src="../../../public/images/image-about-me.png"
+          src="/images/image-about-me.webp"
           alt="about-me-image"
         />
        </div>
-     
-
+  
         <div className="about-me-content-desk">
           <p className="about-me-content-title">Experienced in</p>
           <p className="about-me-content-text">

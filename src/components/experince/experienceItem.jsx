@@ -27,7 +27,7 @@ export default function ExperienceItem({ arr, title }) {
                   activeIndex === item.id ? "active" : ""
                 }`}
               >
-                <img src="/public/images/up.png" alt="up" />
+                <img src="/images/down.webp" alt="down" />
               </div>
             </div>
 
