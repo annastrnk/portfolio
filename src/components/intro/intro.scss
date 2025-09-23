@@ -1,21 +1,30 @@
 .intro-section {
-  background-color: var(--color-dark);
-  padding: 318px 0 120px ;
+  padding: 149px 0 38px;
 
   .text-intro {
     color: var(--color-light-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
     &-contrast {
       color: var(--color-accent);
     }
   }
-  .text-intro-name{
-    padding-top: 82px;
+  .text-intro-name {
+    padding: 40px 0 24px;
   }
 }
 
-.dark-mode {
+
+
+@media screen and (min-width: 1024px) {
   .intro-section {
-    background-color: var(--color-dark-grey);
+    padding: 318px 0 120px;
+    .text-intro {
+      .text-intro-name {
+        padding: 82px 0 154px;
+      }
+    }
   }
 }

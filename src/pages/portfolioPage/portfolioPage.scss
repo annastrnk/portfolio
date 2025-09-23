@@ -1,15 +1,27 @@
+.portfolio-section {
+  padding: 60px 0;
 
-.title-portfolio{
-  color: var(--color-dark-accent);
-  padding: 180px 0 120px;
-}
-
-.portfolio-grid{
+&-grid{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
-    padding-top: 60px;
+    gap: 16px;
+    padding-top: 24px;
+  }
+  .title-portfolio {
+    color: var(--color-dark-accent);
+    padding-bottom: 48px;
+  }
+
+
+  @media screen and (min-width: 1024px) {
+    padding: 180px 0;
+    .portfolio-grid {
+      gap: 60px;
+      padding-top: 60px;
+    }
+    .title-portfolio{
+      padding-bottom: 120px;
+    }
+  }
 }
-
-

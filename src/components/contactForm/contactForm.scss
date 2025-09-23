@@ -9,14 +9,13 @@
     flex-direction: column;
     gap: 16px;
     font-family: "Neutral Sans Regular";
-font-weight: 400;
-
-font-size: 14px;
-
-line-height: 24px;
-letter-spacing: 0%;
-vertical-align: middle;
-padding-top: 43px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding-top: 43px;
+    width: 100%;
 
     &-info {
       display: flex;
@@ -42,14 +41,21 @@ padding-top: 43px;
       resize: vertical;
     }
 
-
     .bnt-submit {
       background: var(--color-accent);
-      color:var(--color-dark);
+      color: var(--color-dark);
       padding: 15px;
       width: 100%;
       border: none;
       transition: 0.3s ease;
+      font-family: "Neutral Sans Regular";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 6%;
+      text-align: center;
+      vertical-align: middle;
+      text-transform: uppercase;
 
       &:hover {
         background: var(--color-hover);
@@ -94,4 +100,11 @@ padding-top: 43px;
       width: 20%;
     }
   }
+}
+.dark-mode{
+  .contact-wrapper .contact-form input, .contact-wrapper .contact-form textarea {
+
+    background-color: var(--color-dark-grey);
+  
+}
 }

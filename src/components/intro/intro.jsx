@@ -4,14 +4,15 @@ import ContactNav from "../contactNav/contactNav";
 
 export default function Intro() {
   return (
-    <div className="intro-section">
-      <div className="container text-main text-intro">
-        <p className="text-main ">
+    <div className="intro-section dark-section">
+      <div className="container text-intro">
+        <div className="text-accent ">
+         <p >
           <span className="text-intro-contrast">Front-end developer </span>
           with a passion for creating beautiful and responsetive websites
         </p>
         <p className="text-intro-name">Anna Starenka</p>
-
+        </div>
         <ContactNav />
       </div>
     </div>

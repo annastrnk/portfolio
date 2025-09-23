@@ -4,25 +4,27 @@ import "./aboutMe.scss";
 export default function AboutMe() {
   return (
     <>
-      <div className="about-me-section">
+      <div className="title-about-me-wrapper">
         <h3 className="title-about-me">ABOUT ME</h3>
       </div>
 
-      <p className="container text-main text-main-about">
+      <p className="container text-accent text-main-about">
         Front-End Developer with hands-on experience building responsive,
         accessible web applications using React, Redux Toolkit, JavaScript, and
         TypeScript.
       </p>
-      <div className="about-me-wrapper">
+      <div className="dark-section">
         <div className="container about-me-content">
 
-       
-        <img
+       <div className="about-me-content-img">
+           <img
           src="../../../public/images/image-about-me.png"
           alt="about-me-image"
         />
+       </div>
+     
 
-        <div>
+        <div className="about-me-content-desk">
           <p className="about-me-content-title">Experienced in</p>
           <p className="about-me-content-text">
             both Single Page Applications (SPA) and server-rendered or

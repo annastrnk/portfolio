@@ -1,21 +1,36 @@
 .contacts-item {
-  display: flex;
-  align-items: center;
-  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr; 
+  gap: 20px;
+  padding-bottom: 10px;
   color: #ffffff;
   font-family: "Neutral Sans Bold";
   font-weight: 700;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 32px;
   letter-spacing: -0.4px;
   vertical-align: middle;
   text-transform: uppercase;
 
+
   &-title:hover {
     color: var(--color-accent);
+  }
+  &-link{
+    word-break: break-all;
+  white-space: normal; 
+  overflow-wrap: anywhere; 
   }
   &-link:hover {
     background-color: var(--color-accent);
     color: var(--color-dark);
   }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    padding-bottom: 16px;
+  
+ 
 }
+}
+

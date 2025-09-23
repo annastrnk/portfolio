@@ -1,52 +1,102 @@
-.about-me-section {
+.title-about-me-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   .title-about-me {
     font-family: "Neutral Sans Meidum";
     font-weight: 500;
-    font-size: 410px;
     color: var(--color-dark);
     vertical-align: middle;
     display: inline-block;
-    font-size: clamp(4rem, 20vw, 410px);
+    font-size: clamp(4rem, 15vw, 410px);
     white-space: nowrap;
   }
+
 }
 
 .text-main-about {
   color: var(--color-dark);
-  padding: 120px 0;
+  padding: 48px 0;
 }
-.about-me-wrapper{
-    background-color: var(--color-dark);
-.about-me-content {
-  display: flex;
-  align-items: center;
 
-  color: #ffffff;
-  vertical-align: middle;
-  // padding: 104px 0;
-  img {
-    max-width: 900px; 
-    height: auto;    
-    object-fit: cover; 
-    border-radius: 8px;
+
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    vertical-align: middle;
+
+    &-desk {
+      padding: 40px 0 20px;
+    }
+
+    &-img {
+      order: 2;
+      img {
+        max-width: 359px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    &-title {
+      font-family: "Neutral Sans Bold";
+      font-weight: 700;
+      line-height: 31.2px;
+      letter-spacing: -0.3px;
+      padding: 6px 0;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.4px;
+      vertical-align: middle;
+      text-transform: uppercase;
+    }
+    &-text {
+      font-family: "Neutral Sans Regular";
+      font-weight: 400;
+      letter-spacing: -0.4px;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      vertical-align: middle;
+    }
   }
-  &-title {
-    font-family: "Neutral Sans Bold";
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 31.2px;
-    letter-spacing: -0.3px;
-    padding:12px 0;
+
+
+
+@media screen and (min-width: 1024px) {
+  .text-main-about {
+    padding: 120px 0;
   }
-  &-text {
-    font-family: "Neutral Sans Regular";
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 34px;
-    letter-spacing: -0.4px;
+
+    .about-me-content {
+      flex-direction: row;
+
+      &-img {
+        flex: 1 1 0;
+        min-width: 0;
+        img {
+          max-width: 650px;
+        }
+      }
+      &-desk {
+        padding: 0;
+        flex: 1 1 0;
+        min-width: 0;
+        order: 2;
+      }
+      &-title {
+        font-size: 36px;
+        letter-spacing: -0.3px;
+        padding: 12px 0;
+      }
+      &-text {
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: -0.4px;
+      }
+    }
   }
-}
-}
+

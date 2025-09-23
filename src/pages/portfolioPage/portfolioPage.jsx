@@ -17,17 +17,19 @@ export default function PortfolioPage() {
 
   return (
     <PageWrapper>
+      <div className="portfolio-section">
       <HorizontalTitle
         text="Projects"
         className="title-section title-portfolio"
       />
       <div className="container">
         <FilterButtons />
-        <div className="portfolio-grid">
+        <div className="portfolio-section-grid">
           {filteredProjects.map((project) => (
             <Projects key={project.id} project={project} />
           ))}
         </div>
+      </div>  
       </div>
     </PageWrapper>
   );

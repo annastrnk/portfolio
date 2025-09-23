@@ -8,12 +8,22 @@
     gap: 30px;
     position: static;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     height: auto; 
     transition: transform 0.3s ease;
-    background-color: var(--color-font-main);
-    opacity: 0.8;
+    background-color: var(--color-dark);
+  }
+
+  .dark-mode{
+    .desktopNavigation{
+      background-color: var(--color-dark-grey);
+    }
+  }
+
+  .header-main-links{
+    display: flex;
+    gap: 42px;
   }
 }

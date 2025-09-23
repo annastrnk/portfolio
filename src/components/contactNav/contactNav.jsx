@@ -1,6 +1,5 @@
-import { useContext } from "react";
+
 import "./contactNax.scss";
-import { ThemeContext } from "../../context/ThemeContext";
 
 export default function ContactNav() {
   return (
@@ -42,10 +41,8 @@ export default function ContactNav() {
         </a>
       </div>
 
-      <a href="/SrarenkaAnna_cv_Frontend.pdf" download="Dowmload CV">
-        <div className="cv-block">
+      <a href="/SrarenkaAnna_cv_Frontend.pdf" className="cv-block" download="Dowmload CV">
           <p>&lt;DOWNLOAD MY CV HERE &gt;</p>
-        </div>
       </a>
     </div>
   );

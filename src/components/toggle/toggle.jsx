@@ -14,11 +14,12 @@ export default function Toggle() {
         onChange={toggleDarkMode}
       />
       <span className="toggle__slider">
-      <span className="toggle__label">
-            {darkMode ? 'Night Mode' : 'Day Mode'}
+      <span className=
+            {`toggle__label ${darkMode ? 'dark' : ''}`}>
+            {darkMode ? 'NIGHT MODE' : 'DAY MODE'}
           </span>
-          <span className="toggle__thumb">
-            {darkMode ? '🌙' : '☀️'}
+          <span className=
+            {`toggle__thumb ${darkMode ? 'dark' : ''}`}>
           </span>
       </span>
     </label>

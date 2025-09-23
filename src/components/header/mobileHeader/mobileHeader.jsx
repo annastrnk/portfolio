@@ -4,6 +4,7 @@ import Toggle from "../../toggle/toggle";
 import { MdOutlineMenu, MdClose } from "react-icons/md";
 import "./mobileHeader.scss";
 import { ThemeContext } from "../../../context/ThemeContext";
+import { NavLink } from "react-router-dom";
 
 export default function MobileHeader() {
   const [click, setClick] = useState(false);
@@ -15,12 +16,16 @@ export default function MobileHeader() {
   return (
     <div className={`mobileNavigation ${click ? "open" : "closed"}`}>
       <div
-        className="mobileHeader-bar container"
+        className="mobileHeader-bar"
         style={{
-          backgroundColor: darkMode ? "#2E2E2E" : "rgb(214 215 211)",
+          backgroundColor: darkMode ? "#6D6B6B" : "#292828",
         }}
       >
-        <span className="mobileHeader-bar-logo">AS</span>
+
+    <NavLink to="/">
+     <img src="/images/Logo_AS.svg" alt="logo" className="logo" />
+    </NavLink>
+
 
         {click ? (
           <MdClose className="hamburgerMenu" size="30px" onClick={toggleMenu} />
@@ -35,9 +40,9 @@ export default function MobileHeader() {
 
       {click && (
         <div
-          className="mobileNavigation-menu container"
+          className="mobileNavigation-menu"
           style={{
-            backgroundColor: darkMode ? "#2E2E2E" : "rgb(214 215 211)",
+            backgroundColor: darkMode ? "#6D6B6B":"#292828"
           }}
         >
           <NavLinks isClicked={true} closeMenu={closeMenu} />

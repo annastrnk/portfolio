@@ -9,13 +9,15 @@ import HorizontalTitle from "../animation/horizontalTitle/horizontalTitle";
 export default function Experiense() {
   return (
     <div className="experiense-section">
-      <HorizontalTitle text="Experiense" className="title-section title-experience"/>
+      <HorizontalTitle text="Experiense" className="title-section title-main-experience"/>
+      <div className="experiense-section-wrapper" >
       <FadeInWhenVisible delay={0.2}>
-        <ExperienseItem  arr={studyData} />
+        <ExperienseItem  title="STUDY" arr={studyData} />
       </FadeInWhenVisible>
-      {/* <FadeInWhenVisible delay={0.2}>
-        <ExperienseItem  arr={workData} />
-      </FadeInWhenVisible> */}
+      <FadeInWhenVisible delay={0.2}>
+        <ExperienseItem title="WORK" arr={workData} />
+      </FadeInWhenVisible>
+    </div>
     </div>
   );
 }

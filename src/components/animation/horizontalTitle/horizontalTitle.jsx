@@ -2,8 +2,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function HorizontalTitle({
   text,
-  from = "0%",
-  to = "-20%",
+  from = "-20%",
+  to = "40%",
   tag: Tag = "h1",
   className = "",
 }) {

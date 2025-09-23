@@ -7,7 +7,7 @@ export default function ContactsPage() {
 
   return (
     <PageWrapper>
-    <footer className="contacts-section">
+    <footer className="contacts-section dark-section">
 
      
 <div className="container">
@@ -17,7 +17,7 @@ export default function ContactsPage() {
 
       <div className="contacts-items">
          <h3 className=" title-contacts">
-        Contact <br/>ME
+        Contact ME
       </h3>
         <ContactItem
           title="PHONE"

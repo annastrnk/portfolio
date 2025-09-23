@@ -10,7 +10,6 @@ export default function Projects({ project }) {
         loading="lazy"
       />
       <p className="project-item-title">{project.title}</p>
-      {/* <p>{project.technologies}</p> */}
       <p className="project-item-desc" >{project.description}</p>
       <div className="project-item-links">
         <a className="link-project content-text" href={project.link} target="_blank">

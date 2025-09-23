@@ -10,6 +10,7 @@ import PortfolioPage from "./pages/portfolioPage/portfolioPage";
 import ContactsPage from "./pages/contactsPage/contactsPage";
 import ScrollToTop from "./components/animation/scrollToTop/scrollToTop";
 import { AnimatePresence } from "framer-motion";
+import SkillsPage from "./pages/skillsPage/skillsPage";
 
 function App() {
   const location = useLocation();
@@ -22,6 +23,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<MainPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/skills" element={<SkillsPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
         </Routes>

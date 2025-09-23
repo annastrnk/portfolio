@@ -1,82 +1,87 @@
 .skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  padding: 20px;
+  .mobile-view {
+    display: block;
+  }
 
-  &-img {
+  .desktop-view {
+    display: none;
+  }
+
+  &-title {
+    color: var(--color-accent);
+    padding-bottom: 40px;
+  }
+  &-section {
+    padding: 40px 0;
+    font-family: "Neutral Sans Bold";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+  }
+  &-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    order: 2;
-    width: 100%;
+    gap: 12px;
   }
-
-  &-img-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-
-    &-item {
-      flex: 1 1 500px;
-      max-width: 50px;
-      aspect-ratio: 1 / 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid var(--color-text-contrast);
-      border-radius: 20px;
-      padding: 10px;
-      transition: all 0.3s ease;
-
-      &:hover {
-        background-color: var(--color-text-accent);
-        transform: scale(1.05);
-      }
-
-      img {
-        width: 40px;
-        height: 40px;
-        object-fit: contain;
-        margin-bottom: 10px;
-      }
-
-      span {
-        text-align: center;
-        font-size: 14px;
-        color: var(--color-text);
-      }
+  &-item {
+    &-desc {
+      white-space: normal;
+      overflow-wrap: normal;
+      word-break: normal;
+      color: #ffffff;
+    }
+    &-title {
+      color: var(--color-accent);
     }
   }
 
-  &-text {
-    order: 1;
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-  }
+
+
 
   @media screen and (min-width: 1024px) {
-    flex-direction: row;
-    align-items: flex-start;
-
-    &-img {
-      order: 1;
-      width: 50%;
-      &-wrapper-item{
-          flex: 1 1 80px;
-          max-width: 100px;
-      }
+&-item-title{
+      font-family: "Neutral Sans Bold";
+      font-weight: 700;
+      font-size: 82px;
+      line-height: 123px;
+      letter-spacing: -0.4px;
+      vertical-align: middle;
+      text-transform: uppercase;
     }
 
-    &-text {
-      order: 2;
-      width: 30%;
-      text-align: left;
+    &-item-desc:hover{
+      color: var(--color-accent);
+    }
+    .mobile-view {
+      display: none;
+    }
+
+    .desktop-view {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .skills-column-left {
+        flex: 1 1 0;
+        min-width: 0;
+      }
+
+      .skills-column-right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 8px 20px;
+        flex: 1 1 0;
+        min-width: 0;
+
+        .tech-item {
+          cursor: pointer;
+          &:hover {
+            color: var(--color-accent);
+          }
+        }
+      }
     }
   }
 }

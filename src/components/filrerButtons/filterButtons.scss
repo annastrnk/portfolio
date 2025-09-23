@@ -6,16 +6,14 @@
 
   &-item {
     border: none;
-    padding: 15px 25px;
+    padding: 6px 12px;
     font-size: 14px;
     color: var(--color-dark);
     background-color: var(--color-light-text);
     font-family: "Neutral Sans Regular";
-    font-family: Neutral Sans;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 6%;
+    line-height: 24px;
+    letter-spacing: 0%;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
@@ -34,9 +32,11 @@
 @media screen and (min-width: 1024px) {
   .filter-btns {
     gap: 30px;
-    .filter-btns-item {
+    &-item {
       font-size: 18px;
       padding: 15px 25px;
+      line-height: 100%;
+      letter-spacing: 6%;
     }
   }
 }
