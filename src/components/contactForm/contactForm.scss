@@ -21,6 +21,22 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      &-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .error {
+      font-family: "Neutral Sans Regular";
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      vertical-align: middle;
+      text-transform: uppercase;
+
+      color: #ffffff;
     }
 
     input,
@@ -30,9 +46,21 @@
       border: 1px solid #ffffff;
       padding: 10px;
       transition: 0.3s ease;
+      color: #ffffff;
 
       &:focus {
         border: 1px solid var(--color-accent);
+      }
+      &::placeholder {
+        font-family: "Neutral Sans Regular";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color: #ffffff;
+        opacity: 0.5;
       }
     }
 
@@ -56,23 +84,23 @@
       text-align: center;
       vertical-align: middle;
       text-transform: uppercase;
-
-      &:hover {
-        background: var(--color-hover);
-      }
     }
   }
 
   .status-message {
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 12px;
+    padding-top: 20px;
+    font-family: "Neutral Sans Bold";
+    font-weight: 400;
     font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
     text-align: center;
     animation: fadeIn 0.5s ease-out;
 
     &.success {
-      color: var(--color-text-contrast);
+      color: var(--color-accent);
     }
 
     &.error {
@@ -92,19 +120,20 @@
   }
 
   @media screen and (min-width: 1024px) {
-    .contact-form-info {
-      flex-direction: row;
+    .contact-form {
+      width: auto;
+      .contact-form-info {
+        flex-direction: row;
+      }
     }
-
     .bnt-submit {
       width: 20%;
     }
   }
 }
-.dark-mode{
-  .contact-wrapper .contact-form input, .contact-wrapper .contact-form textarea {
-
+.dark-mode {
+  .contact-wrapper .contact-form input,
+  .contact-wrapper .contact-form textarea {
     background-color: var(--color-dark-grey);
-  
-}
+  }
 }

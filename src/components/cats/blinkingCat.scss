@@ -1,7 +1,6 @@
 .body {
-    width: 90px;
-    height: 100px;
-  
+  width: 0.5em;   // адаптивно відносно розміру шрифту
+  height: 0.5em;
     &,
     &:before,
     &:after {
@@ -57,75 +56,119 @@
   }
   
   .cat {
-    position: relative; // або absolute всередині, якщо треба
-    margin-top: 20px;
+    position: relative;
   
-    .face {
-      top: 22px;
-      left: 20px;
-      width: 6px;
-      height: 6px;
-      background-color: #000;
+    // .face {
+    //   top: 22px;
+    //   left: 20px;
+    //   width: 6px;
+    //   height: 6px;
+    //   background-color: #000;
   
-      border-radius: 50%;
-      box-shadow: 44px 0 #000;
-      animation: blink 3s infinite linear;
+    //   border-radius: 50%;
+    //   box-shadow: 44px 0 #000;
+    //   animation: blink 3s infinite linear;
   
-      &:before,
-      &:after {
-        top: 14px;
-        left: 6px;
-        z-index: 5;
-        width: 16px;
-        height: 20px;
-        border-radius: 50% / 40%;
-        border-right: 2px solid #000;
-        border-bottom: 2px solid #000;
-        border-left: 2px solid transparent;
-        border-top: 2px solid transparent;
+    //   &:before,
+    //   &:after {
+    //     top: 14px;
+    //     left: 6px;
+    //     z-index: 5;
+    //     width: 16px;
+    //     height: 20px;
+    //     border-radius: 50% / 40%;
+    //     border-right: 2px solid #000;
+    //     border-bottom: 2px solid #000;
+    //     border-left: 2px solid transparent;
+    //     border-top: 2px solid transparent;
   
-        box-shadow: 0px 0px #000;
+    //     box-shadow: 0px 0px #000;
+    //   }
+  
+    //   &:after {
+    //     left: 24px;
+    //     transform: rotateY(180deg);
+    //   }
+    // }
+    .cat {
+      .face {
+        top: 0.44em;     // замість 22px
+        left: 0.4em;     // замість 20px
+        width: 0.12em;   // замість 6px
+        height: 0.12em;  // замість 6px
+        box-shadow: 0.88em 0 #000; // замість 44px
       }
-  
-      &:after {
-        left: 24px;
-        transform: rotateY(180deg);
+    
+      .face:before,
+      .face:after {
+        top: 0.28em;     // замість 14px
+        left: 0.12em;    // замість 6px
+        width: 0.32em;   // замість 16px
+        height: 0.4em;   // замість 20px
+      }
+    
+      .face:after {
+        left: 0.48em;    // замість 24px
+      }
+    
+      .features {
+        top: 0.88em;     // замість 44px
+        left: 0.22em;    // замість 11px
+        width: 0.4em;    // замість 20px
+        height: 0.02em;  // замість 1px
+        box-shadow: 0 0.5em #000, 4.8em 0 #000, 4.8em 0.5em #000;
+    
+        &:after {
+          left: 3em;     // замість 30px
+          top: -0.12em;  // замість -6px
+          width: 0.12em; // замість 6px
+          height: 0.12em;// замість 6px
+        }
+    
+        &:before {
+          top: 0.2em;    // замість 10px
+          left: 7.4em;   // замість 74px
+          width: 4em;    // замість 40px
+          height: 4em;   // замість 40px
+          border-width: 0.5em; // замість 5px
+        }
       }
     }
-    .features {
-      top: 44px;
-      left: 11px;
-      width: 20px;
-      height: 1px;
+    
+    // .features {
+    //   top: 44px;
+    //   left: 11px;
+    //   width: 20px;
+    //   height: 1px;
   
-      background-color: #000;
-      box-shadow: 0 5px #000, 48px 0 #000, 48px 5px #000;
+    //   background-color: #000;
+    //   box-shadow: 0 5px #000, 48px 0 #000, 48px 5px #000;
   
-      &:after {
-        left: 30px;
-        top: -6px;
-        width: 6px;
-        height: 6px;
-        background-color: #000;
+    //   &:after {
+    //     left: 30px;
+    //     top: -6px;
+    //     width: 6px;
+    //     height: 6px;
+    //     background-color: #000;
   
-        border-radius: 50%;
+    //     border-radius: 50%;
   
-        box-shadow: 2px 0 #000, 1px 1px #000;
+    //     box-shadow: 2px 0 #000, 1px 1px #000;
   
-        animation: yawn 3s infinite linear;
-      }
-      &:before {
-        top: 10px;
-        left: 74px;
-        width: 40px;
-        height: 40px;
+    //     animation: yawn 3s infinite linear;
+    //   }
+    //   &:before {
+    //     top: 10px;
+    //     left: 74px;
+    //     width: 40px;
+    //     height: 40px;
   
-        border-radius: 50%;
-        border: 5px solid $defaultBodyColor;
-        border-left: 0;
-        border-top: 0;
-      }
-    }
+    //     border-radius: 50%;
+    //     border: 5px solid $defaultBodyColor;
+    //     border-left: 0;
+    //     border-top: 0;
+    //   }
+    // }
   }
   
   @keyframes blink {

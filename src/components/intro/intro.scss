@@ -1,11 +1,16 @@
 .intro-section {
   padding: 149px 0 38px;
+  background-image: url('/images/color2.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40% center;
 
   .text-intro {
     color: var(--color-light-text);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
 
     &-contrast {
       color: var(--color-accent);
@@ -16,6 +21,12 @@
   }
 }
 
+.dark-mode{
+  .intro-section{
+    background-image: url('/images/color1.svg');
+  }
+
+}
 
 
 @media screen and (min-width: 1024px) {

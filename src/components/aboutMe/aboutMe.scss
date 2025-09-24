@@ -1,25 +1,53 @@
 .title-about-me-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+
   .title-about-me {
-    font-family: "Neutral Sans Meidum";
+    font-family: "Neutral Sans Medium";
     font-weight: 500;
     color: var(--color-dark);
-    vertical-align: middle;
-    display: inline-block;
     font-size: clamp(4rem, 15vw, 410px);
-    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    line-height: 1;
   }
 
+  .title-letter-o {
+    position: relative;
+    display: inline-block;
+    z-index: 1; 
+
+    .title-about-me-cat {
+      position: absolute;
+      top: 57%;
+      left: 60%;
+      transform: translate(-50%, -50%); 
+      width: 80%;  
+      height: auto;
+      z-index: -1;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
 }
+
 
 .text-main-about {
   color: var(--color-dark);
   padding: 48px 0;
+
+  font-size: 24px;
+    font-family: "Neutral Sans Bold";
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    vertical-align: bottom;
+    text-transform: uppercase;
+
 }
-
-
   .about-me-content {
     display: flex;
     flex-direction: column;
@@ -52,6 +80,7 @@
       letter-spacing: -0.4px;
       vertical-align: middle;
       text-transform: uppercase;
+      color: var(--color-contrast);
     }
     &-text {
       font-family: "Neutral Sans Regular";
@@ -64,13 +93,17 @@
     }
   }
 
-
-
 @media screen and (min-width: 1024px) {
   .text-main-about {
     padding: 120px 0;
-  }
 
+    font-size: 50px;
+    font-family: "Neutral Sans Medium";
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    line-height: normal;
+    vertical-align: bottom;
+  }
     .about-me-content {
       flex-direction: row;
 

@@ -22,21 +22,21 @@ const validationSchema = Yup.object({
 });
 
 export default function ContactForm() {
-    const [statusMessage, setStatusMessage] = useState("");
-    const [statusType, setStatusType] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");
+  const [statusType, setStatusType] = useState("");
 
   const handleSubmit = (values, { resetForm }) => {
     emailjs
       .send("service_j7gnuc5", "template_y8q5teh", values, "cOl0vnpXqyZlcAx6L")
       .then(() => {
-        setStatusMessage("✅ Message sent successfully!");
-        setStatusType('success')
+        setStatusMessage("Message sent successfully!");
+        setStatusType("success");
         resetForm();
       })
       .catch((error) => {
         console.error(error);
-        setStatusMessage("❌ Something went wrong. Please try again later.");
-        setStatusType("error")
+        setStatusMessage("Something went wrong. Please try again later.");
+        setStatusType("error");
       });
   };
 
@@ -49,16 +49,25 @@ export default function ContactForm() {
       >
         <Form className="contact-form">
           <div className="contact-form-info">
-            <Field type="text" id="name" name="name" placeholder="YOUR NAME" />
-            <ErrorMessage name="name" component="div" className="error" />
+            <div className="contact-form-info-item">
+              <Field
+                type="text"
+                id="name"
+                name="name"
+                placeholder="YOUR NAME"
+              />
+              <ErrorMessage name="name" component="div" className="error" />
+            </div>
 
-            <Field
-              type="email"
-              id="email"
-              name="email"
-              placeholder="YOU@EXAMPLE.COM"
-            />
-            <ErrorMessage name="email" component="div" className="error" />
+            <div className="contact-form-info-item">
+              <Field
+                type="email"
+                id="email"
+                name="email"
+                placeholder="YOU@EXAMPLE.COM"
+              />
+              <ErrorMessage name="email" component="div" className="error" />
+            </div>
           </div>
 
           <Field
@@ -78,14 +87,14 @@ export default function ContactForm() {
           />
           <ErrorMessage name="message" component="div" className="error" />
 
-          <button className="bnt-submit" type="submit">Send Message</button>
+          <button className="bnt-submit" type="submit">
+            Send Message
+          </button>
         </Form>
       </Formik>
 
       {statusMessage && (
-        <div className={`status-message ${statusType}`}>
-          {statusMessage}
-        </div>
+        <div className={`status-message ${statusType}`}>{statusMessage}</div>
       )}
     </div>
   );

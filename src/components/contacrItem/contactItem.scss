@@ -1,6 +1,6 @@
 .contacts-item {
   display: grid;
-  grid-template-columns: 0.5fr 1fr; 
+  grid-template-columns: 0.5fr 1fr;
   gap: 20px;
   padding-bottom: 10px;
   color: #ffffff;
@@ -12,25 +12,24 @@
   vertical-align: middle;
   text-transform: uppercase;
 
-
-  &-title:hover {
-    color: var(--color-accent);
-  }
-  &-link{
+  &-link {
     word-break: break-all;
-  white-space: normal; 
-  overflow-wrap: anywhere; 
-  }
-  &-link:hover {
-    background-color: var(--color-accent);
-    color: var(--color-dark);
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
+  &:hover {
+    .contacts-item-title {
+      color: var(--color-accent);
+    }
+
+    .contacts-item-link {
+      background-color: var(--color-accent);
+      color: var(--color-dark);
+    }
+  }
   @media screen and (min-width: 1024px) {
     font-size: 24px;
     padding-bottom: 16px;
-  
- 
+  }
 }
-}
-

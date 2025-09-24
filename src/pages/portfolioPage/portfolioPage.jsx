@@ -20,6 +20,7 @@ export default function PortfolioPage() {
       <div className="portfolio-section">
       <HorizontalTitle
         text="Projects"
+        from = "-80%" to = "40%"
         className="title-section title-portfolio"
       />
       <div className="container">

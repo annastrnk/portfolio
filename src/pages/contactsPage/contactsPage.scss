@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .title-contacts {
@@ -27,6 +27,7 @@
     line-height: 31.2px;
     letter-spacing: -0.3px;
     vertical-align: middle;
+    text-align: center;
   }
 
   .contacts-items {
@@ -50,7 +51,7 @@ padding:130px 0 200px; ;
   }
   .contacts-items {
     order: 1;
-    flex: 1 1 300px;
+    flex: 1 1 0;
     min-width: 0;
   }
   .contacts-email {

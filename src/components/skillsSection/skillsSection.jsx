@@ -9,6 +9,8 @@ export default function SkillsSection() {
     <div className="skills">
       <HorizontalTitle
         text="MY SKILLS "
+        from = "-60%"
+  to = "60%"
         className="title-section skills-title"
       />
       <div className="skills-section dark-section">
