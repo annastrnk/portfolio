@@ -42,13 +42,13 @@ export default function AboutMe() {
             <p className="about-me-content-title">Strong understanding of</p>
             <p className="about-me-content-text">
               UI/UX design principles, performance optimization, and
-              cross-browser compatibility. Tran- sitioned from a 10+ year
+              cross-browser compatibility. Transitioned from a 10+ year
               leadership role in veterinary medicine, bringing proven
               adaptability, communication, and problem-solving skills.
             </p>
             <p className="about-me-content-title"> Fast learner</p>
             <p className="about-me-content-text">
-              detail-oriented, and motivated to contribute to real-world
+              detail-oriented and motivated to contribute to real-world
               products in a collaborative environment.
             </p>
           </div>

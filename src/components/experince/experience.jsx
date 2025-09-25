@@ -9,7 +9,7 @@ import HorizontalTitle from "../animation/horizontalTitle/horizontalTitle";
 export default function Experiense() {
   return (
     <div className="experiense-section">
-      <HorizontalTitle text="Experiense" from = "-50%"to = "80%" className="title-section title-main-experience"/>
+      <HorizontalTitle text="Experience" from = "-50%"to = "80%" className="title-section title-main-experience"/>
       <div className="experiense-section-wrapper" >
       <FadeInWhenVisible delay={0.2}>
         <ExperienseItem  title="STUDY" arr={studyData} />

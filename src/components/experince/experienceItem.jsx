@@ -17,7 +17,9 @@ export default function ExperienceItem({ arr, title }) {
       {arr.map((item) => (
         <div key={item.id} className="experience-item">
           <div
-            className="experience-item-title"
+            className={`experience-item-title ${
+              activeIndex === item.id ? "active" : ""
+            }`}
             onClick={() => toggleItem(item.id)}
           >
             <div className="experience-title-top">
@@ -38,13 +40,18 @@ export default function ExperienceItem({ arr, title }) {
 
           {activeIndex === item.id && (
             <div className="experience-content">
-              <ul className="experience-item-desc">
-                {item.description.map((line, i) => (
-                  <li className="experience-content-text" key={i}>
-                    {line}
-                  </li>
-                ))}
-              </ul>
+              {item.text ? (
+                <p className="experience-content-text">{item.text}</p>
+              ) : (
+                <ul className="experience-item-desc">
+                  {item.description.map((line, i) => (
+                    <li className="experience-content-text" key={i}>
+                      {line}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
               <div className="experience-content-bottom">
                 {item.certificate && (
                   <a

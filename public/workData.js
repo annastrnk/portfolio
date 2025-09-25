@@ -1,7 +1,7 @@
 const workData = [
     {
       id: 1,
-      date: "Jan 2025 - present",
+      date: "January 2025 - Jule 2025",
       position: "Fronend Developer",
       company:"Lit Studio",
       description: [
