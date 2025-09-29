@@ -8,7 +8,7 @@ import PageWrapper from "../../components/animation/pageWrapper/pageWrapper";
 import Projects from "../../components/projects/projects";
 import HorizontalTitle from "../../components/animation/horizontalTitle/horizontalTitle";
 
-export default function PortfolioPage() {
+export default function PortfolioPage({from='0%'}) {
   const selectedTechnology = useSelector((state) => state.filters.technology);
 
   const filteredProjects = selectedTechnology
@@ -20,7 +20,7 @@ export default function PortfolioPage() {
       <div className="portfolio-section">
       <HorizontalTitle
         text="Projects"
-        from = "-80%" to = "40%"
+        from = {from} to = "40%"
         className="title-section title-portfolio"
       />
       <div className="container">

@@ -3,14 +3,14 @@ import skills from "../../../public/skills";
 import HorizontalTitle from "../animation/horizontalTitle/horizontalTitle";
 import { useState } from "react";
 
-export default function SkillsSection() {
+export default function SkillsSection({from="70%", to="60%"}) {
   const [hoveredTitle, setHoveredTitle] = useState("");
   return (
     <div className="skills">
       <HorizontalTitle
         text="MY SKILLS "
-        from = "-60%"
-  to = "60%"
+        from = {from}
+  to = {to}
         className="title-section skills-title"
       />
       <div className="skills-section dark-section">

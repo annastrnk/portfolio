@@ -8,6 +8,7 @@ import FadeInWhenVisible from "../../components/animation/fadeInWhenVisible/fade
 import BlinkingCat from "../../components/cats/blinkingCat";
 import SkillsPage from "../skillsPage/skillsPage";
 import Intro from "../../components/intro/intro";
+import SkillsSection from "../../components/skillsSection/skillsSection";
 
 export default function MainPage() {
   return (
@@ -20,10 +21,10 @@ export default function MainPage() {
           <AboutPage />
         </FadeInWhenVisible>
         <FadeInWhenVisible delay={0.2}>
-          <SkillsPage />
+          <SkillsSection from="-30%" />
         </FadeInWhenVisible>
         <FadeInWhenVisible delay={0.2}>
-          <PortfolioPage />
+          <PortfolioPage from="-80%" />
         </FadeInWhenVisible>
         <FadeInWhenVisible delay={0.2}>
           <ContactsPage />
