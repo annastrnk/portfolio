@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 12px;
-  flex: 1 1 300px;
+  flex: 0 1 calc((100% - 32px) / 3);
   padding: 16px;
   background-color: var(--color-dark);
   transition: transform 0.3s ease;
@@ -69,11 +69,11 @@
     gap: 24px;
     padding: 36px;
     &-title {
-      font-size: 36px;
+      font-size: 28px;
       letter-spacing: -0.3px;
     }
     &-desc {
-      font-size: 24px;
+      font-size: 16px;
       line-height: 34px;
       letter-spacing: -0.4px;
     }

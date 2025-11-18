@@ -42,13 +42,21 @@ export default function FilterButtons(){
         >
           TypeScript
         </button>
-        <button
+        {/* <button
           className={`filter-btns-item ${
             selectedTechnology === "HTML + CSS" ? "active-btn" : ""
           }`}
           onClick={() => dispatch(setTechnology("HTML + CSS"))}
         >
           HTML + CSS
+        </button> */}
+        <button
+          className={`filter-btns-item ${
+            selectedTechnology === "NEXTJS" ? "active-btn" : ""
+          }`}
+          onClick={() => dispatch(setTechnology("NEXTJS"))}
+        >
+       NEXTJS
         </button>
         <button
           className={`filter-btns-item ${
