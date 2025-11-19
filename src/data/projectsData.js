@@ -1,13 +1,13 @@
 const projects = [
   {
     id: 1,
-    title: "Weather App",
-    tech: ["NEXTJS", "TypeScript"],
-    image: "/images/weather-app-nextjs.webp",
+    title: "The Foodiest App",
+    tech: ["NEXTJS", "JAVASCRIPT"],
+    image: "/images/foodiest-app.webp",
     description:
-      "A modern, responsive weather application built with Next.js that allows users to track weather conditions in their favorite cities worldwide",
-    link: "https://weather-app-nextjs-rho.vercel.app/",
-    linkCode: "https://github.com/annastrnk/weather-app-nextjs",
+      "Web application for sharing and discovering recipes. Features MongoDB Atlas for data storage, AWS S3 for image uploads",
+    link: "https://the-foodiest-app.vercel.app/",
+    linkCode: "https://github.com/annastrnk/the_foodiest_app",
   },
   {
     id: 2,
@@ -29,9 +29,19 @@ const projects = [
     link: "https://sorting-game-ruddy.vercel.app/",
     linkCode: "https://github.com/annastrnk/ball_sorting_game",
   },
-
   {
     id: 4,
+    title: "Weather App",
+    tech: ["NEXTJS", "TypeScript"],
+    image: "/images/weather-app-nextjs.webp",
+    description:
+      "A modern, responsive weather application built with Next.js that allows users to track weather conditions in their favorite cities worldwide",
+    link: "https://weather-app-nextjs-rho.vercel.app/",
+    linkCode: "https://github.com/annastrnk/weather-app-nextjs",
+  },
+
+  {
+    id: 5,
     title: "Vegan Dragon",
     tech: ["TypeScript", "REACT"],
     image: "/images/vegan-dragon.webp",
@@ -42,7 +52,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Harry Potter Explorer",
     tech: ["TypeScript", "REACT"],
     image: "/images/harry-potter.webp",
@@ -53,7 +63,18 @@ const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
+    title: "Events App",
+    tech: ["JAVASCRIPT", "NEXTJS"],
+    image: "/images/events-app.webp",
+    description:
+      "A full-stack Next.js application for managing and displaying events with comments and newsletter subscriptions. Built with MongoDB for data persistence and featuring a clean, service-oriented architecture.",
+    link: "https://the-nextevents-app.vercel.app/",
+    linkCode: "https://github.com/annastrnk/the_nextevents_app",
+  },
+
+  {
+    id: 8,
     title: "Medical Center",
     tech: ["REACT", "JAVASCRIPT"],
     image: "/images/medical-center.webp",

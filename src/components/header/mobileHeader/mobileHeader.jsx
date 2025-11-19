@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 
 export default function MobileHeader() {
   const [click, setClick] = useState(false);
-  const { darkMode, toggleDarkMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
 
   const toggleMenu = () => setClick((prev) => !prev);
   const closeMenu = () => setClick(false);

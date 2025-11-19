@@ -1,14 +1,14 @@
 import AboutMe from "../../components/aboutMe/aboutMe";
 import "./aboutPage.scss";
 import PageWrapper from "../../components/animation/pageWrapper/pageWrapper";
-import Experiense from "../../components/experince/experience";
+import Experience from "../../components/experience/experience";
 
 export default function AboutPage() {
   return (
     <PageWrapper>
         <div className="about-section">
           <AboutMe />
-          <Experiense/>
+          <Experience/>
         </div>
     </PageWrapper>
   );

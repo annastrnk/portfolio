@@ -1,21 +1,21 @@
 import FadeInWhenVisible from "../animation/fadeInWhenVisible/fadeInWhenVisible";
-import ExperienseItem from "./experienceItem";
-import studyData from "../../../public/studydata";
-import workData from '../../../public/workData.js'
+import ExperienceItem from "./experienceItem";
+import studyData from "../../data/studydata";
+import workData from '../../data/workData'
 
-import "./experiense.scss";
+import "./experience.scss";
 import HorizontalTitle from "../animation/horizontalTitle/horizontalTitle";
 
-export default function Experiense() {
+export default function Experience() {
   return (
-    <div className="experiense-section">
+    <div className="experience-section">
       <HorizontalTitle text="Experience" from = "-50%"to = "80%" className="title-section title-main-experience"/>
-      <div className="experiense-section-wrapper" >
+      <div className="experience-section-wrapper" >
       <FadeInWhenVisible delay={0.2}>
-        <ExperienseItem  title="STUDY" arr={studyData} />
+        <ExperienceItem  title="STUDY" arr={studyData} />
       </FadeInWhenVisible>
       <FadeInWhenVisible delay={0.2}>
-        <ExperienseItem title="WORK" arr={workData} />
+        <ExperienceItem title="WORK" arr={workData} />
       </FadeInWhenVisible>
     </div>
     </div>

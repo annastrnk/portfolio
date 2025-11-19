@@ -1,5 +1,6 @@
 import "./skillsSection.scss";
-import skills from "../../../public/skills";
+import PropTypes from "prop-types";
+import skills from "../../data/skills";
 import HorizontalTitle from "../animation/horizontalTitle/horizontalTitle";
 import { useState } from "react";
 
@@ -47,3 +48,8 @@ export default function SkillsSection({from="70%", to="60%"}) {
     </div>
   );
 }
+
+SkillsSection.propTypes = {
+  from: PropTypes.string,
+  to: PropTypes.string,
+};

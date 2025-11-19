@@ -25,18 +25,28 @@ export default function ContactForm() {
   const [statusMessage, setStatusMessage] = useState("");
   const [statusType, setStatusType] = useState("");
 
-  const handleSubmit = (values, { resetForm }) => {
+  const handleSubmit = (values, { resetForm, setSubmitting }) => {
+    setStatusMessage("");
+    setSubmitting(true);
+    
     emailjs
-      .send("service_j7gnuc5", "template_y8q5teh", values, "cOl0vnpXqyZlcAx6L")
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        values,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
       .then(() => {
         setStatusMessage("Message sent successfully!");
         setStatusType("success");
         resetForm();
       })
-      .catch((error) => {
-        console.error(error);
+      .catch(() => {
         setStatusMessage("Something went wrong. Please try again later.");
         setStatusType("error");
+      })
+      .finally(() => {
+        setSubmitting(false);
       });
   };
 
@@ -47,50 +57,61 @@ export default function ContactForm() {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        <Form className="contact-form">
-          <div className="contact-form-info">
-            <div className="contact-form-info-item">
-              <Field
-                type="text"
-                id="name"
-                name="name"
-                placeholder="YOUR NAME"
-              />
-              <ErrorMessage name="name" component="div" className="error" />
+        {({ isSubmitting }) => (
+          <Form className="contact-form">
+            <div className="contact-form-info">
+              <div className="contact-form-info-item">
+                <Field
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="YOUR NAME"
+                  aria-label="Your name"
+                />
+                <ErrorMessage name="name" component="div" className="error" />
+              </div>
+
+              <div className="contact-form-info-item">
+                <Field
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="YOU@EXAMPLE.COM"
+                  aria-label="Your email"
+                />
+                <ErrorMessage name="email" component="div" className="error" />
+              </div>
             </div>
 
-            <div className="contact-form-info-item">
-              <Field
-                type="email"
-                id="email"
-                name="email"
-                placeholder="YOU@EXAMPLE.COM"
-              />
-              <ErrorMessage name="email" component="div" className="error" />
-            </div>
-          </div>
+            <Field
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="SUBJECT"
+              className="field-subject"
+              aria-label="Email subject"
+            />
+            <ErrorMessage name="subject" component="div" className="error" />
 
-          <Field
-            type="text"
-            id="subject"
-            name="subject"
-            placeholder="SUBJECT"
-            className="field-subject"
-          />
-          <ErrorMessage name="subject" component="div" className="error" />
+            <Field
+              as="textarea"
+              id="message"
+              name="message"
+              placeholder="WRITE YOUR MESSAGE HERE ..."
+              aria-label="Your message"
+            />
+            <ErrorMessage name="message" component="div" className="error" />
 
-          <Field
-            as="textarea"
-            id="message"
-            name="message"
-            placeholder="WRITE YOUR MESSAGE HERE ..."
-          />
-          <ErrorMessage name="message" component="div" className="error" />
-
-          <button className="bnt-submit" type="submit">
-            Send Message
-          </button>
-        </Form>
+            <button 
+              className="bnt-submit" 
+              type="submit"
+              disabled={isSubmitting}
+              aria-label="Send message"
+            >
+              {isSubmitting ? "Sending..." : "Send Message"}
+            </button>
+          </Form>
+        )}
       </Formik>
 
       {statusMessage && (

@@ -9,12 +9,14 @@ export default function FilterButtons(){
 
     return(
 
-        <div className="filter-btns">
+        <div className="filter-btns" role="group" aria-label="Filter projects by technology">
         <button
           className={`filter-btns-item ${
             !selectedTechnology ? "active-btn" : ""
           }`}
           onClick={() => dispatch(clearFilters())}
+          aria-pressed={!selectedTechnology}
+          aria-label="Show all projects"
         >
           All
         </button>
@@ -23,6 +25,8 @@ export default function FilterButtons(){
             selectedTechnology === "REACT" ? "active-btn" : ""
           }`}
           onClick={() => dispatch(setTechnology("REACT"))}
+          aria-pressed={selectedTechnology === "REACT"}
+          aria-label="Filter projects by React"
         >
           REACT
         </button>
@@ -31,6 +35,8 @@ export default function FilterButtons(){
             selectedTechnology === "JAVASCRIPT" ? "active-btn" : ""
           }`}
           onClick={() => dispatch(setTechnology("JAVASCRIPT"))}
+          aria-pressed={selectedTechnology === "JAVASCRIPT"}
+          aria-label="Filter projects by JavaScript"
         >
           JavaScript
         </button>
@@ -39,22 +45,18 @@ export default function FilterButtons(){
             selectedTechnology === "TypeScript" ? "active-btn" : ""
           }`}
           onClick={() => dispatch(setTechnology("TypeScript"))}
+          aria-pressed={selectedTechnology === "TypeScript"}
+          aria-label="Filter projects by TypeScript"
         >
           TypeScript
         </button>
-        {/* <button
-          className={`filter-btns-item ${
-            selectedTechnology === "HTML + CSS" ? "active-btn" : ""
-          }`}
-          onClick={() => dispatch(setTechnology("HTML + CSS"))}
-        >
-          HTML + CSS
-        </button> */}
         <button
           className={`filter-btns-item ${
             selectedTechnology === "NEXTJS" ? "active-btn" : ""
           }`}
           onClick={() => dispatch(setTechnology("NEXTJS"))}
+          aria-pressed={selectedTechnology === "NEXTJS"}
+          aria-label="Filter projects by Next.js"
         >
        NEXTJS
         </button>
@@ -63,6 +65,8 @@ export default function FilterButtons(){
             selectedTechnology === "EXPRESS" ? "active-btn" : ""
           }`}
           onClick={() => dispatch(setTechnology("EXPRESS"))}
+          aria-pressed={selectedTechnology === "EXPRESS"}
+          aria-label="Filter projects by Express"
         >
           EXPRESS
         </button>

@@ -1,9 +1,8 @@
 import "./portfolioPage.scss";
-
+import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
-import projects from "../../../public/projectsData";
-import PortfolioItem from "../../components/projects/projects";
-import FilterButtons from "../../components/filrerButtons/filterButtons";
+import projects from "../../data/projectsData";
+import FilterButtons from "../../components/filterButtons/filterButtons";
 import PageWrapper from "../../components/animation/pageWrapper/pageWrapper";
 import Projects from "../../components/projects/projects";
 import HorizontalTitle from "../../components/animation/horizontalTitle/horizontalTitle";
@@ -35,3 +34,7 @@ export default function PortfolioPage({from='0%'}) {
     </PageWrapper>
   );
 }
+
+PortfolioPage.propTypes = {
+  from: PropTypes.string,
+};

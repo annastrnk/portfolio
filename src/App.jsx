@@ -8,6 +8,7 @@ import MainPage from "./pages/mainPage/mainPage";
 import AboutPage from "./pages/aboutPage/aboutPage";
 import PortfolioPage from "./pages/portfolioPage/portfolioPage";
 import ContactsPage from "./pages/contactsPage/contactsPage";
+import NotFoundPage from "./pages/notFoundPage/notFoundPage";
 import ScrollToTop from "./components/animation/scrollToTop/scrollToTop";
 import { AnimatePresence } from "framer-motion";
 import SkillsPage from "./pages/skillsPage/skillsPage";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/skills" element={<SkillsPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </AnimatePresence>
     </ThemeProvider>

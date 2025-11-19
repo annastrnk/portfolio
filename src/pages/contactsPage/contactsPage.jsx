@@ -1,6 +1,6 @@
 import "./contactsPage.scss";
 import ContactForm from "../../components/contactForm/contactForm";
-import ContactItem from "../../components/contacrItem/contactItem";
+import ContactItem from "../../components/contactItem/contactItem";
 import PageWrapper from "../../components/animation/pageWrapper/pageWrapper";
 
 export default function ContactsPage() {
