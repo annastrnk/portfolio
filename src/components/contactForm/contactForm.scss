@@ -7,14 +7,14 @@
   .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: var(--spacing-md);
     font-family: "Neutral Sans Regular";
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     vertical-align: middle;
-    padding-top: 43px;
+    padding-top: var(--spacing-2xl);
     width: 100%;
 
     &-info {
@@ -24,7 +24,7 @@
       &-item {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: var(--spacing-sm);
       }
     }
     .error {
@@ -32,34 +32,36 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 24px;
-      letter-spacing: 0%;
+      letter-spacing: 0;
       vertical-align: middle;
       text-transform: uppercase;
-
-      color: #ffffff;
+      color: var(--color-white);
     }
 
     input,
     textarea {
       font-size: 16px;
       background-color: var(--color-dark);
-      border: 1px solid #ffffff;
+      border: 1px solid var(--color-border);
       padding: 10px;
-      transition: 0.3s ease;
-      color: #ffffff;
+      transition: border-color var(--transition-base), box-shadow var(--transition-base);
+      color: var(--color-white);
 
       &:focus {
-        border: 1px solid var(--color-accent);
+        border-color: var(--color-border-focus);
+        outline: none;
+        box-shadow: var(--shadow-focus);
       }
+      
       &::placeholder {
         font-family: "Neutral Sans Regular";
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
-        letter-spacing: 0%;
+        letter-spacing: 0;
         vertical-align: middle;
         text-transform: uppercase;
-        color: #ffffff;
+        color: var(--color-white);
         opacity: 0.5;
       }
     }
@@ -75,15 +77,36 @@
       padding: 15px;
       width: 100%;
       border: none;
-      transition: 0.3s ease;
+      transition: all var(--transition-base);
       font-family: "Neutral Sans Regular";
       font-weight: 400;
       font-size: 18px;
       line-height: 100%;
-      letter-spacing: 6%;
+      letter-spacing: 0.06em;
       text-align: center;
       vertical-align: middle;
       text-transform: uppercase;
+      cursor: pointer;
+      
+      &:hover:not(:disabled) {
+        background: var(--color-contrast);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-accent);
+      }
+      
+      &:active:not(:disabled) {
+        transform: translateY(0);
+      }
+      
+      &:focus-visible {
+        outline: 2px solid var(--color-dark-accent);
+        outline-offset: 2px;
+      }
+      
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
     }
   }
 
@@ -93,18 +116,18 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     vertical-align: middle;
     text-transform: uppercase;
     text-align: center;
     animation: fadeIn 0.5s ease-out;
 
     &.success {
-      color: var(--color-accent);
+      color: var(--color-success);
     }
 
     &.error {
-      color: #721c24;
+      color: var(--color-error);
     }
   }
 

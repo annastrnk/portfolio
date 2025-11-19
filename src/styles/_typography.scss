@@ -10,8 +10,8 @@ ul {
 .title-section {
   font-size: clamp(82px, 15vw + 20px, 480px);
   font-weight: 500;
-  letter-spacing: -1.34px;
-  font-family: "Neutral Sans Meidum";
+  letter-spacing: -0.02em;
+  font-family: "Neutral Sans Medium";
   text-transform: uppercase;
 }
 
@@ -21,7 +21,7 @@ ul {
   font-family: "Neutral Sans Bold";
   font-weight: 700;
   line-height: 32px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.01em;
   vertical-align: bottom;
   text-transform: uppercase;
 }
@@ -47,7 +47,7 @@ ul {
     font-family: "Neutral Sans Medium";
     font-weight: 500;
     line-height: 100px;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.01em;
     vertical-align: bottom;
   }
 }

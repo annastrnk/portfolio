@@ -1,11 +1,38 @@
 
 :root {
-  --color-dark:#292828;
-  --color-dark-grey:#6D6B6B ;
-  --color-accent:#AFFF9A;
-  --color-light-text:#EFEFEF ;
-  --color-contrast:#E7AB4B;
+  --color-dark: #292828;
+  --color-dark-grey: #6D6B6B;
+  --color-accent: #AFFF9A;
+  --color-light-text: #EFEFEF;
+  --color-contrast: #E7AB4B;
   --color-dark-accent: #135B00;
-  --color-light:#D6D6D6 ;
-  }
+  --color-light: #D6D6D6;
+  --color-white: #ffffff;
+  --color-error: #ff6b6b;
+  --color-success: var(--color-accent);
+  --color-border: #ffffff;
+  --color-border-focus: var(--color-accent);
+  
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 36px;
+  --spacing-2xl: 48px;
+  
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.4s ease;
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.3);
+  --shadow-accent: 0 4px 12px rgba(231, 171, 75, 0.3);
+  --shadow-focus: 0 0 0 3px rgba(175, 255, 154, 0.2);
+}
+
+.dark-mode {
+  --color-dark: #6D6B6B;
+  --color-dark-grey: #292828;
+}
   
